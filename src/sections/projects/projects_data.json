@@ -1,0 +1,262 @@
+[
+  {
+    "title": "Galactic Dreamscape",
+    "year": 2024,
+    "field_of_study": "art",
+    "transferable_skills": [
+      ""
+    ],
+    "description": "",
+    "image": "/assets/img/coming_soon.jpg",
+    "badges": [
+      {
+        "type": "artist-statement",
+        "link": ""
+      },
+      {
+        "type": "report",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "title": "TinyML Device for Emotion Detection",
+    "year": 2024,
+    "field_of_study": "data-science",
+    "transferable_skills": [
+      "problem-solving"
+    ],
+    "description": "This project aims to develop an emotion-sensing device that analyzes speech using machine learning models and a microphone to detect and respond to a person’s emotional state in real-time. The device provides visual feedback through colored LED lights, creating an immersive environment that reflects the user’s emotions.",
+    "image": "/assets/img/tiny_process.png",
+    "badges": [
+      {
+        "type": "report",
+        "link": "/assets/files/DSC_231_Final_Report.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Bionic Balance",
+    "year": 2024,
+    "field_of_study": "art",
+    "transferable_skills": [
+      "creative"
+    ],
+    "description": "",
+    "image": "/assets/img/bionic_balance_cover.JPG",
+    "badges": [
+      {
+        "type": "artist-statement",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "title": "TutorPup",
+    "year": 2024,
+    "field_of_study": "computer-science",
+    "transferable_skills": [
+      ""
+    ],
+    "description": "",
+    "image": "/assets/img/tutorPup.png",
+    "badges": [
+      {
+        "type": "report",
+        "link": "/assets/files/CSE_190_276B_Final_Report.pdf"
+      },
+      {
+        "type": "video",
+        "link": "https://vimeo.com/972719523"
+      }
+    ]
+  },
+  {
+    "title": "HUES (Heartfelt Utterances Emotive Strokes)",
+    "year": 2024,
+    "field_of_study": "art",
+    "transferable_skills": [
+      ""
+    ],
+    "description": "Can art help us figure out our feelings better? Art can make us feel a lot of different things. This project combines the social media posts with artistic effects to explore the digital expression of emotions. It integrates two datasets: facial images and messages from Kaggle.",
+    "image": "/assets/img/hues_cover.png",
+    "badges": [
+      {
+        "type": "artist-statement",
+        "link": ""
+      },
+      {
+        "type": "video",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "title": "Magnetic Motion: Light & Shadow",
+    "year": 2023,
+    "field_of_study": "art",
+    "transferable_skills": [
+      ""
+    ],
+    "description": "An art installation blending electronic technologies with the raw beauty of natural elements to create an ever-changing visual experience. It has a small motor with a magnet that spins and moves iron powder in a sealed box. Lights under the box shine in a magical way, and a mist maker adds a dreamy feel. Inside are a tiny car and rocks, also with magnets, that change how the iron powder moves.",
+    "image": "/assets/img/magnetic_motion_cover.JPG",
+    "badges": [
+      {
+        "type": "artist-statement",
+        "link": ""
+      },
+      {
+        "type": "video",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "title": "Recommendation Strategy of Kuaishou to Enhance User Community Engagement",
+    "year": 2023,
+    "field_of_study": "data-science",
+    "transferable_skills": [
+      ""
+    ],
+    "description": "This project analyzes Kuaishou's recommender system, evaluating models like ALS, Gradient Boosting, and Time-series Prediction to enhance friend and video suggestions, with varying accuracies and real-time adaptation features.",
+    "image": "/assets/img/cse258_cover.JPG",
+    "badges": [
+      {
+        "type": "report",
+        "link": "/assets/files/CSE258_Project.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Green Thumbs",
+    "year": 2023,
+    "field_of_study": "computer-science",
+    "transferable_skills": [
+      ""
+    ],
+    "description": "This project is an automated plant watering system designed to constantly monitor plant health, automate watering, and allow remote management. It is motivated by the need for a reliable system to maintain plants, contributing to healthier indoor environments, and the desire to create a smart, adaptive plant care system.",
+    "image": "/assets/img/green-thumbs.png",
+    "badges": [
+      {
+        "type": "report",
+        "link": "/assets/files/green-thumbs-final-report.pdf"
+      },
+      {
+        "type": "code",
+        "link": "https://github.com/sbenetz/UCSD-CSE-118-218-Team-B"
+      }
+    ]
+  },
+  {
+    "title": "Global Soccer Visualization",
+    "year": 2023,
+    "field_of_study": "data-science",
+    "transferable_skills": [
+      ""
+    ],
+    "description": "This project offers magazine-style visuals and commentary, illuminating soccer's global impact through engaging graphics and insightful context.",
+    "image": "/assets/img/soccer_visualization.png",
+    "badges": [
+      {
+        "type": "website",
+        "link": "https://cao1224.github.io/globalSoccer_visualization/"
+      }
+    ]
+  },
+  {
+    "title": "FlexBody",
+    "year": 2023,
+    "field_of_study": "computer-science",
+    "transferable_skills": [
+      ""
+    ],
+    "description": "FlexBody is an Android fitness app for tracking exercise and nutrition, maintaining lists, and sharing progress through pictures.",
+    "image": "/assets/img/flexBody-wireframes.png",
+    "badges": [
+      {
+        "type": "code",
+        "link": "https://github.com/AND102-FlexBody/FlexBody"
+      }
+    ]
+  },
+  {
+    "title": "Climate Justice Website",
+    "year": 2023,
+    "field_of_study": "computer-science",
+    "transferable_skills": [
+      ""
+    ],
+    "description": "This project involved creating a climate justice website with React, featuring an educational flashcard section and a community board for collaborative dialogue and resources.",
+    "image": "/assets/img/climate-website.png",
+    "badges": [
+      {
+        "type": "website",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "title": "Protein Prediction Power",
+    "year": 2023,
+    "field_of_study": "data-science",
+    "transferable_skills": [""],
+    "description": "This project aims to predict the protein content in recipes using nutritional information and tags. It employs regression modeling, starting with a linear model and advancing to a Random Forest Regressor.",
+    "image": "/assets/img/model_plot.png",
+    "badges": [
+      {"type": "website", "link": "https://cao1224.github.io/recipeRating_modelPredict/"}
+    ]
+  },
+  {
+    "title": "Living on the Edge",
+    "year": 2023,
+    "field_of_study": "art",
+    "transferable_skills": [""],
+    "description": "This project combines art and game design using JavaScript and p5.js to create an interactive experience that highlights the effects of climate change on ecosystems and encourages users to make environmentally conscious decisions.",
+    "image": "/assets/img/interactiveModel.JPG",
+    "badges": [
+      {"type": "artist-statement", "link": ""}
+    ]
+  },
+  {
+    "title": "Tasty Data",
+    "year": 2023,
+    "field_of_study": "data-science",
+    "transferable_skills": [""],
+    "description": "This project involves a dataset with 83,782 unique recipes and corresponding reviews and ratings. The data spans from 2008 to 2018, and the aim is to analyze trends in recipe changes over time, focusing on protein content.",
+    "image": "/assets/img/TastyData.png",
+    "badges": [
+      {"type": "website", "link": "https://cao1224.github.io/recipeRatings_EDA/"}
+    ]
+  },
+  {
+    "title": "Chromatic Cataclysm",
+    "year": 2023,
+    "field_of_study": "art",
+    "transferable_skills": [""],
+    "description": "An interactive film blending visuals and sounds, exploring climate change impacts and AI, urging reflection and environmental action.",
+    "image": "/assets/img/interactive-film.gif",
+    "badges": [
+      {"type": "artist-statement", "link": ""}
+    ]
+  },
+  {
+    "title": "Open-source Project: Open Energy Dashboard",
+    "year": 2022,
+    "field_of_study": "computer-science",
+    "transferable_skills": [""],
+    "description": "This project addresses dynamic OED page buttons, making them fixed with the current page marked (e.g., grayed out) for better usability.",
+    "image": "/assets/img/OED.gif",
+    "badges": [
+      {"type": "code", "link": "https://github.com/OpenEnergyDashboard/OED/pull/807"}
+    ]
+  },
+  {
+    "title": "Ceramics Collection",
+    "year": 2021,
+    "field_of_study": "art",
+    "transferable_skills": [""],
+    "description": "",
+    "image": "/assets/img/ceramics_collection.png",
+    "badges": []
+  }
+]
