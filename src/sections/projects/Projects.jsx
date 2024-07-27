@@ -4,6 +4,10 @@ import Navbar from '../navBar/Navbar';
 import Footer from '../footer/Footer';
 
 const Projects = () => {
+    useEffect(() => {
+        document.title = "Projects - Kaleo Cao";
+      }, [])
+
     const [selectedYear, setSelectedYear] = useState('');
     const [selectedField, setSelectedField] = useState('');
     const [selectedSkills, setSelectedSkills] = useState([]);

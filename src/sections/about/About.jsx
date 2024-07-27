@@ -74,6 +74,10 @@ const About = () => {
     });
   };
 
+  useEffect(() => {
+    document.title = "About - Kaleo Cao";
+  }, [])
+
   return (
 
     <div>

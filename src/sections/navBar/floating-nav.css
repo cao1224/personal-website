@@ -51,3 +51,13 @@
         background: var(--color-primary);
     }
 }
+
+#floating_nav a.active-link {
+    color: white;
+    background: #0B88C6;
+}
+
+li.active a, .w-nav-menu a.active-link {
+    color: white;
+    background: #0B88C6;
+}
