@@ -106,7 +106,7 @@ const Projects = () => {
                             <h4>Transferable Skills</h4>
                             <div className="btn-group-toggle" data-toggle="buttons">
                                 <div className="btn-group-toggle" data-toggle="buttons">
-                                {[ 'None', 'Problem-Solving', 'Creativity', 'Communication', 'Collaboration', 'Critical Thinking', 'Time Management', 'Learning Agility', 'Technical Proficiency'].map((skill) => (
+                                {[ 'None', 'Problem-Solving', 'Creativity', 'Communication', 'Collaboration', 'Critical Thinking', 'Learning Agility'].map((skill) => (
                                     <label key={skill} className="btn btn-sm btn-white font-weight-normal category-btn mr-2 mb-3">
                                     <input
                                         type="checkbox"
