@@ -1,0 +1,80 @@
+#skillset .services_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 4rem;
+}
+
+#skillset .special_card{
+    background: var(--color-white);
+    padding: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 1.2rem;
+    transition: var(--transition);
+    
+}
+
+#skillset .special_card.service {
+    align-items: flex-start;
+    display: flex;
+    gap: 1rem;
+}
+
+#skillset .special_card:hover {
+    background: transparent;
+    border-color: var(--color-white);
+    transform: translateY(-0.5rem);
+}
+
+#skillset .special_card.light {
+    background: var(--color-light);
+}
+
+#skillset .special_card.light:hover {
+    background: transparent;
+    border-color: var(--color-light);
+}
+
+
+#skillset .service_icon {
+    background: var(--color-primary);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    transition: var(--transition);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#skillset .service:hover .service_icon {
+    background: var(--color-light);
+    color: var(--color-primary);
+}
+
+#skillset .service h4 {
+    margin-bottom: 0.7rem;
+}
+
+
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+    #skillset .services_container {
+        gap: 1.5rem;
+    }
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+    #skillset .services_container {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    #skillset .special_card.service {
+        gap: 1.2rem;
+    }
+}

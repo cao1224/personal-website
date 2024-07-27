@@ -1,0 +1,21 @@
+@keyframes bottomToTop {
+  0% {
+    background-size: 100% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+/* Initial state for the div */
+.hover-animate {
+  background: linear-gradient(to top, #eff1f1d2, #E8EAEA) no-repeat;
+  background-size: 100% 0%;
+  transition: background 1.5s ease;
+  border-radius: 10px; /* Adjust the border radius as needed */
+}
+
+/* Apply the animation on hover */
+.hover-animate:hover {
+  animation: bottomToTop 1.5s forwards;
+}

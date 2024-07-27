@@ -1,0 +1,30 @@
+.special_card {
+    background: hsl(0, 5%, 100%);
+    padding: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 1.2rem;
+    transition: all 500ms ease;
+}
+
+.special_card:hover {
+    background: transparent;
+    border-color: hsl(0, 5%, 100%);
+    transform: translateY(-0.5rem);
+}
+
+.special_card.light {
+    background: hsl(270, 5%, 94%);
+}
+
+.special_card.light:hover {
+    background: transparent;
+    border-color: hsl(270, 5%, 94%);
+}
+
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+    .special_card {
+        padding: 1.2rem;
+    }
+}
