@@ -5,8 +5,7 @@ import Footer from '../footer/Footer';
 
 import projects from './projects_data.json';
 import '../../assets/styles/portfolio.css';
-import '../../assets/styles/special_card.css'
-
+import '../../assets/styles/special_card.css';
 
 
 

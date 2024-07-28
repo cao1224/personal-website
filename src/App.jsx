@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from '../src/sections/about/About';
 import Projects from '../src/sections/projects/Projects';
 import Gallery from '../src/sections/gallery/Gallery';
+import GalacticDreamscape from '../src/sections/projects/artworks/GalacticDreamscape.jsx';
 
 
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/" element={<About />} />
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/gallery' element={<Gallery/>}/>
+        <Route path='/artworks/GalacticDreamscape' element={<GalacticDreamscape/>}/>
       </Routes>
     </Router>
   );
