@@ -52,7 +52,7 @@ const GalacticDreamscape = () => {
 
                         <h3 className="text-capitalize font-weight-bold">Current State</h3>
 
-                        <div id="carouselExampleInterval" className="carousel slide py-6" data-bs-ride="carousel" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , width: '60vw', height: 'auto' }}>
+                        <div id="carouselExampleInterval" className="carousel slide pt-6" data-bs-ride="carousel" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , width: '60vw', height: 'auto' }}>
                             <div className="carousel-inner" style={{borderRadius: '10px'}}>
                                 <div className="carousel-item active" data-bs-interval="10000">
                                     <img src={Galaxy1} className="d-block w-100 custom-img" alt="..." />
@@ -95,9 +95,15 @@ const GalacticDreamscape = () => {
                             </button>
                         </div>
 
+                        <p className="py-5">I selected 200 images from three categories—Galaxies, Nebulae, and Star Clusters—on the NASA website. My selection criteria were based on color, composition, and an additional factor that enhances the visual appeal and scientific significance of each image.</p>
+
                         <div style={{ display: 'flex' }}>
                             <img src={current_state_one} style={{ width: '50vw', height: 'auto', borderRadius: '15px' }} alt="description" />
                         </div>
+
+                        <p className='py-5'>
+                            <strong>Fluid Simulation: </strong> controlled by mouse, with parameters including velocity, gradient color value, pressure, and brush stroke.
+                        </p>
                     </div>
                 </section>
 
@@ -422,7 +428,7 @@ const GalacticDreamscape = () => {
                                 <strong>Space Landscape Generation:</strong> Use space images to create dynamic and immersive space landscapes in darkroom.
                             </li>
                             <li>
-                                <strong>Interactive Particle System:</strong> Develop a particle system that reacts to human movement, creating trails and shapes mimicking cosmic dust, energy flows, and nebula formations.
+                                <strong>Interactive Particle System:</strong> Develop a particle system that reacts to human movement, creating trails and shapes that mimic cosmic dust, energy flows, and nebular structures.
                             </li>
                             <li>
                                 <strong>Zero Gravity Simulation:</strong> Use fluid simulation techniques to simulate the grace of astronauts floating in zero gravity.
