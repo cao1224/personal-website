@@ -18272,3 +18272,9 @@ ul.list-bullet li, ol.list-decimal li {
   ol.list-decimal li {
     list-style-type: decimal;
   }
+
+  .custom-img {
+    height: 400px; /* Set your desired height */
+    width: 100%; /* Set width to 100% to fill the container */
+    object-fit: cover; /* Adjusts image to cover the container without distortion */
+}

@@ -4,6 +4,16 @@ import Navbar from '../../navBar/Navbar';
 import Footer from '../../footer/Footer';
 
 import current_state_one from '/assets/img/icam_project_current_state_1.gif';
+import Galaxy1 from '/assets/img/galactic_dreamscape_data/galaxy_1.jpg';
+import Galaxy2 from '/assets/img/galactic_dreamscape_data/galaxy_2.jpg';
+import Galaxy3 from '/assets/img/galactic_dreamscape_data/galaxy_3.jpg';
+import Galaxy4 from '/assets/img/galactic_dreamscape_data/galaxy_4.jpg';
+import Galaxy5 from '/assets/img/galactic_dreamscape_data/galaxy_5.jpg';
+import Galaxy6 from '/assets/img/galactic_dreamscape_data/galaxy_6.jpg';
+import Nebulae1 from '/assets/img/galactic_dreamscape_data/nebulae_1.jpg';
+import Nebulae2 from '/assets/img/galactic_dreamscape_data/nebulae_2.jpg';
+import Nebulae3 from '/assets/img/galactic_dreamscape_data/nebulae_3.jpg';
+import Star1 from '/assets/img/galactic_dreamscape_data/star_1.jpg';
 
 const GalacticDreamscape = () => {
 
@@ -22,10 +32,8 @@ const GalacticDreamscape = () => {
                         <h2 className="row text-capitalize font-weight-bolder">Galactic Dreamscape [2024]</h2>
                     </div>
 
-
-
                     <div className="bordered-div py-2 my-4 fs-6 fw-light">
-                        Technique: TouchDesigner, Kinect/Leap Motion
+                        Technique: TouchDesigner, Kinect/Leap Motion<br/>
                     </div>
 
                 </div>
@@ -44,10 +52,52 @@ const GalacticDreamscape = () => {
 
                         <h3 className="text-capitalize font-weight-bold">Current State</h3>
 
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <img src={current_state_one} style={{ width: '50vw', height: 'auto', borderRadius: '10px' }} alt="description" />
+                        <div id="carouselExampleInterval" className="carousel slide py-6" data-bs-ride="carousel" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , width: '60vw', height: 'auto' }}>
+                            <div className="carousel-inner" style={{borderRadius: '10px'}}>
+                                <div className="carousel-item active" data-bs-interval="10000">
+                                    <img src={Galaxy1} className="d-block w-100 custom-img" alt="..." />
+                                </div>
+                                <div className="carousel-item" data-bs-interval="2000">
+                                    <img src={Galaxy2} className="d-block w-100 custom-img" alt="..." />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Nebulae3} className="d-block w-100 custom-img" alt="..." />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Galaxy3} className="d-block w-100 custom-img" alt="..." />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Nebulae2} className="d-block w-100 custom-img" alt="..." />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Galaxy4} className="d-block w-100 custom-img" alt="..." />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Galaxy5} className="d-block w-100 custom-img" alt="..." />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Galaxy6} className="d-block w-100 custom-img" alt="..." />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Nebulae1} className="d-block w-100 custom-img" alt="..." />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Star1} className="d-block w-100 custom-img" alt="..." />
+                                </div>
+                            </div>
+                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Previous</span>
+                            </button>
+                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
+                            </button>
                         </div>
 
+                        <div style={{ display: 'flex' }}>
+                            <img src={current_state_one} style={{ width: '50vw', height: 'auto', borderRadius: '15px' }} alt="description" />
+                        </div>
                     </div>
                 </section>
 
@@ -322,7 +372,7 @@ const GalacticDreamscape = () => {
                                     {/* Week 10 */}
                                     <div className="single-timeline-area">
                                         <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
-                                            <p>Week 10</p>
+                                            <p>🎉 Week 10</p>
                                         </div>
                                         <div className="row">
                                             <div className="col-12 col-md-6 col-lg-4">
@@ -369,7 +419,7 @@ const GalacticDreamscape = () => {
                                 <strong>Human Face Detection and Alien Generation:</strong> Utilize TouchDesigner and ComfyUI or Stable Diffusion to generate an alien image based on the participant's face.
                             </li>
                             <li>
-                                <strong>Space Landscape Generation:</strong> Use space images to create dynamic and immersive space landscapes.
+                                <strong>Space Landscape Generation:</strong> Use space images to create dynamic and immersive space landscapes in darkroom.
                             </li>
                             <li>
                                 <strong>Interactive Particle System:</strong> Develop a particle system that reacts to human movement, creating trails and shapes mimicking cosmic dust, energy flows, and nebula formations.
@@ -379,15 +429,15 @@ const GalacticDreamscape = () => {
                             </li>
 
                             <li>
-                            <strong>Design Workflow in TouchDesigner:</strong> Develop the final workflow design in TouchDesigner, detailing how each component connects and interacts.
+                                <strong>Design Workflow in TouchDesigner:</strong> Develop the final workflow design in TouchDesigner, detailing how each component connects and interacts.
                             </li>
 
                             <li>
-                            <strong>Integrate NASA Image Dataset:</strong> Incorporate NASA's image dataset and brainstorm creative ways to present these images meaningfully within the installation.
+                                <strong>Integrate NASA Image Dataset:</strong> Incorporate NASA's image dataset and brainstorm creative ways to present these images meaningfully within the installation.
                             </li>
 
                             <li>
-                            <strong>AI Integration:</strong> Aim for 60-70% of the project to be controlled by AI tools and algorithms.
+                                <strong>AI Integration:</strong> Aim for 60-70% of the project to be controlled by AI tools and algorithms.
                             </li>
                         </ul>
 
