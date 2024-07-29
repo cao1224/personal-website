@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import Navbar from '../../navBar/Navbar';
 import Footer from '../../footer/Footer';
 
+import current_state_one from '/assets/img/icam_project_current_state_1.gif';
 
 const GalacticDreamscape = () => {
 
@@ -24,28 +25,29 @@ const GalacticDreamscape = () => {
 
 
                     <div className="bordered-div py-2 my-4 fs-6 fw-light">
-                        Technique:
+                        Technique: TouchDesigner, Kinect/Leap Motion
                     </div>
 
                 </div>
 
                 <section id="goal">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-12 col-md-10 col-lg-8">
-                                <h3 className="text-capitalize font-weight-bold">Goal</h3>
-                            </div>
-                        </div>
+                        <h3 className="text-capitalize font-weight-bold">Goal</h3>
+                        <p >
+                            Creating an immersive experience that transports participants into a fantastical space exploration journey. Using cutting-edge technology, the installation combines particle effects, fluid simulations, human body movement, and NASA datasets to generate a dynamic and interactive visual environment. Through the integration of machine learning, participants’ movements will interact with cosmic visuals, creating a symbiotic relationship between the human body and the universe.
+                        </p>
                     </div>
                 </section>
 
                 <section id="current_state">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12 col-md-10 col-lg-8">
-                                <h3 className="text-capitalize font-weight-bold">Current State</h3>
-                            </div>
+                    <div className="container py-4">
+
+                        <h3 className="text-capitalize font-weight-bold">Current State</h3>
+
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <img src={current_state_one} style={{ width: '50vw', height: 'auto', borderRadius: '10px' }} alt="description" />
                         </div>
+
                     </div>
                 </section>
 
@@ -183,7 +185,7 @@ const GalacticDreamscape = () => {
                                                 </div>
                                             </div>
 
-                                            
+
                                         </div>
                                     </div>
 
@@ -307,7 +309,7 @@ const GalacticDreamscape = () => {
                                             </div>
                                             <div className="col-12 col-md-6 col-lg-4">
                                                 <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    
+
                                                     <div className="timeline-text">
                                                         <h5>Task 9.2</h5>
                                                         <p>Prepare final presentation materials</p>
@@ -360,12 +362,36 @@ const GalacticDreamscape = () => {
                 </section>
 
                 <section id="nextsteps">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12 col-md-10 col-lg-8">
-                                <h3 className="text-capitalize font-weight-bold">Next Steps</h3>
-                            </div>
-                        </div>
+                    <div className="container py-4">
+                        <h3 className="text-capitalize font-weight-bold">Next Steps</h3>
+                        <ul className="list-bullet">
+                            <li>
+                                <strong>Human Face Detection and Alien Generation:</strong> Utilize TouchDesigner and ComfyUI or Stable Diffusion to generate an alien image based on the participant's face.
+                            </li>
+                            <li>
+                                <strong>Space Landscape Generation:</strong> Use space images to create dynamic and immersive space landscapes.
+                            </li>
+                            <li>
+                                <strong>Interactive Particle System:</strong> Develop a particle system that reacts to human movement, creating trails and shapes mimicking cosmic dust, energy flows, and nebula formations.
+                            </li>
+                            <li>
+                                <strong>Zero Gravity Simulation:</strong> Use fluid simulation techniques to simulate the grace of astronauts floating in zero gravity.
+                            </li>
+
+                            <li>
+                            <strong>Design Workflow in TouchDesigner:</strong> Develop the final workflow design in TouchDesigner, detailing how each component connects and interacts.
+                            </li>
+
+                            <li>
+                            <strong>Integrate NASA Image Dataset:</strong> Incorporate NASA's image dataset and brainstorm creative ways to present these images meaningfully within the installation.
+                            </li>
+
+                            <li>
+                            <strong>AI Integration:</strong> Aim for 60-70% of the project to be controlled by AI tools and algorithms.
+                            </li>
+                        </ul>
+
+
                     </div>
                 </section>
 
