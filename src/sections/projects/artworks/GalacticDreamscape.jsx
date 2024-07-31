@@ -451,6 +451,12 @@ const GalacticDreamscape = () => {
                     </div>
                 </section>
 
+                <section>
+                    <div className="container py-4">
+                    <h5 className="text-capitalize font-weight-bold">Random Recommended works</h5>
+                    </div>
+                </section>
+
             </main>
             <Footer />
         </div>

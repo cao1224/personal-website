@@ -85,7 +85,7 @@ const About = () => {
         <Navbar />
 
         <div id="welcome-container">
-          <h1><span className="wave">👋</span> Hi! I'm Yuancheng Cao.</h1>
+          <h1><span className="wave">👋</span> Aloha! I'm Yuancheng Cao.</h1>
 
           <div className="gap-2 d-md-block">
             <a className="btn btn-primary-soft mr-5 btn-sm" href={Resume} target="_blank" role="button">View Resume</a>
@@ -108,7 +108,27 @@ const About = () => {
             <div className="row align-items-center justify-content-between">
               <div className="col-12 col-md-6 order-md-2">
 
-                <p className="font-size-lg text-muted mb-4">
+                <div>
+                  <h5 className="text-muted">How to Pronounce "Yuancheng"?</h5>
+                  
+                  <div>
+                    <p className="text-muted"><strong>In English Phonetic: </strong>yoo•an-cheng</p>
+                    <audio controls>
+                      <source src="path-to-chinese-pronunciation.mp3" type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+
+                  <div>
+                    <p className="text-muted"><strong>In Chinese 拼音:</strong> yuán chéng</p>
+                    <audio controls>
+                      <source src="path-to-chinese-pronunciation.mp3" type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+
+                <p className="font-size-lg text-muted my-4">
                   I'm Yuancheng (Kaleo) Cao, a four-year undergraduate at University of California,
                   San Diego studying Data Science and Computing Arts.
                 </p>
@@ -576,10 +596,10 @@ const About = () => {
                 <p className="font-size-sm text-muted mb-5">June 2023 – August 2023</p>
 
                 <p>
-                  Contributed to an <span className="badge-orange-soft font-weight-bold">open-source project</span> by optimizing <span className="badge-orange-soft font-weight-bold">AWS S3 file organization</span> through 
-                  user-friendly tagging and implementing a custom API for seamless <span className="badge-orange-soft font-weight-bold">CRUD operations</span> on 
-                  file metadata. Collaborated with front-end engineers to integrate AWS S3 for an effective 
-                  <span className="badge-orange-soft font-weight-bold"> file management solution</span>, while conducting <span className="badge-orange-soft font-weight-bold">cross-cloud compatibility tests</span> to 
+                  Contributed to an <span className="badge-orange-soft font-weight-bold">open-source project</span> by optimizing <span className="badge-orange-soft font-weight-bold">AWS S3 file organization</span> through
+                  user-friendly tagging and implementing a custom API for seamless <span className="badge-orange-soft font-weight-bold">CRUD operations</span> on
+                  file metadata. Collaborated with front-end engineers to integrate AWS S3 for an effective
+                  <span className="badge-orange-soft font-weight-bold"> file management solution</span>, while conducting <span className="badge-orange-soft font-weight-bold">cross-cloud compatibility tests</span> to
                   enhance system reliability. <a href="https://www.linkedin.com/pulse/open-source-experience-firefiles-object-tagging-filtering-cao/?trackingId=trQHV4bRSYqPbIrHiTThIg%3D%3D" target="_blank" className="hyperlink-custom">Learn more</a>
                 </p>
 
@@ -622,12 +642,12 @@ const About = () => {
 
 
                 <p>
-                  Modeled and optimized <span className="badge-red-soft font-weight-bold">3D assets</span> for the <a href="https://aquarium.ucsd.edu/" target="_blank" className="hyperlink-custom">Birch Aquarium</a> Digital Museum, 
-                  utilizing <a href="https://cyberarch.pages.nrp-nautilus.io/cyberarchweb/" target="_blank" className="hyperlink-custom">CyberArchWarehouses'</a> digital museum tools to create an 
-                  immersive virtual experience. Processed <span className="badge-red-soft font-weight-bold">LiDAR scans and photogrammetric data</span> to generate accurate 3D models of aquarium exhibits, 
+                  Modeled and optimized <span className="badge-red-soft font-weight-bold">3D assets</span> for the <a href="https://aquarium.ucsd.edu/" target="_blank" className="hyperlink-custom">Birch Aquarium</a> Digital Museum,
+                  utilizing <a href="https://cyberarch.pages.nrp-nautilus.io/cyberarchweb/" target="_blank" className="hyperlink-custom">CyberArchWarehouses'</a> digital museum tools to create an
+                  immersive virtual experience. Processed <span className="badge-red-soft font-weight-bold">LiDAR scans and photogrammetric data</span> to generate accurate 3D models of aquarium exhibits,
                   contributing to the creation of a comprehensive <span className="badge-red-soft font-weight-bold">building information modeling (BIM) model and living digital twin</span> of the facility.
                 </p>
-                
+
 
               </div>
             </div>
