@@ -276,7 +276,7 @@ const About = () => {
 
                   <div className="col-6 mb-3">
                     <div className="card square-card" style={{backgroundColor:'#ffb703'}}>
-                      <h3 className="top-center-text">How to Pronounce "Yuancheng"?</h3>
+                      <h4 className="top-center-text">How to Pronounce "Yuancheng"?</h4>
                       <img
                         src={greet}
                         className="card-img-bottom img-fluid scaled-image"
@@ -335,7 +335,7 @@ const About = () => {
                                   <div className="dialogue-row justify-content-end">
                                     <div className="dialogue-audio">
                                       <audio controls>
-                                        <source src="/assets/files/english_pronoun.m4a" type="audio/mpeg" />
+                                        <source src="/assets/files/english_pronoun.m4a" type="audio/mp4" />
                                         Your browser does not support the audio element.
                                       </audio>
                                     </div>
@@ -355,7 +355,7 @@ const About = () => {
                                   <div className="dialogue-row justify-content-end">
                                     <div className="dialogue-audio">
                                       <audio controls>
-                                        <source src="/assets/files/chinese_pronounce.m4a" type="audio/mpeg" />
+                                        <source src="/assets/files/chinese_pronounce.m4a" type="audio/mp4" />
                                         Your browser does not support the audio element.
                                       </audio>
                                     </div>
