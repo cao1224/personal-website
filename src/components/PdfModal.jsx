@@ -8,7 +8,7 @@ const PdfModal = ({ show, handleClose, pdfUrl, title }) => {
     <div>
       {show && (
         <div className="modal fade show" style={{ display: 'block' }} tabIndex="-1" role="dialog">
-          <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-dialog modal-dialog-centered modal-md" role="document">
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">{title}</h5>

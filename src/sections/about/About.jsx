@@ -7,10 +7,6 @@ import Footer from '../footer/Footer';
 import Resume from "/assets/files/Yuancheng_Cao_Resume.pdf";
 
 
-import LeftTopImg from "/assets/img/about-1.jpg";
-import LeftBottomImg from "/assets/img/about-2.png";
-import RightBottomImg from "/assets/img/about-3.jpg";
-import RightTopImg from "/assets/img/about-4.png";
 import ucsdCover from "/assets/img/photo-ucsd.jpg";
 import codepathCover from "/assets/img/CodePath.jpeg";
 import Apprentice from '/assets/img/apprentice.png';
@@ -18,11 +14,19 @@ import DesignLab_work from "/assets/img/StoriesUnshelteredCrowd.jpeg";
 import CodeDay_work from "/assets/img/SU23_openSource.png";
 import modeling_work from "/assets/img/birch.gif";
 
+import coding_people from '/assets/img/coding_memoji.png';
+import two_hand_memoji from '/assets/img/two_hand_memoji.png';
+import greet from '/assets/img/greet.png';
+import call_me from '/assets/img/call_me.png';
+import linkedin_logo from '/assets/img/LinkedIn_logo_initials.png';
+
 import '../../assets/styles/skillset.css';
 import '../../assets/styles/common.css';
 
 import { FaLink } from "react-icons/fa6";
 import { FaAnglesDown } from "react-icons/fa6";
+
+
 
 
 const About = () => {
@@ -74,6 +78,30 @@ const About = () => {
     });
   };
 
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const images = ['/assets/img/California.png', '/assets/img/hawaii.png'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const [hovered, setHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setTimeout(() => {
+      setHovered(false);
+    }, 500); // match the transition time for a smoother effect
+  };
+
   useEffect(() => {
     document.title = "About - Kaleo Cao";
   }, [])
@@ -96,6 +124,7 @@ const About = () => {
       </div>
 
       <main className="container">
+        {/* About Me section */}
         <section id="about" className="pt-8 pt-md-11">
           <div className="container">
             <div className="row">
@@ -105,62 +134,259 @@ const About = () => {
             </div>
 
 
-            <div className="row align-items-center justify-content-between">
+            <div className="row justify-content-between">
               <div className="col-12 col-md-6 order-md-2">
 
-                <div>
-                  <h5 className="text-muted">How to Pronounce "Yuancheng"?</h5>
-                  
-                  <div>
-                    <p className="text-muted"><strong>In English Phonetic: </strong>yoo•an-cheng</p>
-                    <audio controls>
-                      <source src="path-to-chinese-pronunciation.mp3" type="audio/mpeg" />
-                      Your browser does not support the audio element.
-                    </audio>
-                  </div>
 
-                  <div>
-                    <p className="text-muted"><strong>In Chinese 拼音:</strong> yuán chéng</p>
-                    <audio controls>
-                      <source src="path-to-chinese-pronunciation.mp3" type="audio/mpeg" />
-                      Your browser does not support the audio element.
-                    </audio>
-                  </div>
-                </div>
 
                 <p className="font-size-lg text-muted my-4">
-                  I'm Yuancheng (Kaleo) Cao, a four-year undergraduate at University of California,
+                  Yuancheng (Kaleo) Cao is a fourth undergraduate at University of California,
                   San Diego studying Data Science and Computing Arts.
                 </p>
 
                 <p className="font-size-lg text-muted mb-4">
-                  I am an <span className="text-success font-weight-bolder">interdisciplinary explorer</span> passionate about the <span className="text-success font-weight-bolder">intersection of technology, data, and creative expression</span>. With a background in data science, I turn complex datasets into meaningful stories. My studies in computing arts have sparked my love for <span className="text-success font-weight-bolder">using technology as a medium for art</span>, allowing me to create dynamic and immersive experiences. I love art and technology and enjoy developing projects that combine these fields to <span className="text-success font-weight-bolder">inspire and innovate</span>. Feel free to browse my portfolio to see some of my recent projects, or connect with me on LinkedIn.
+                  He is an <span className="text-success font-weight-bolder">interdisciplinary explorer</span> passionate about the <span className="text-success font-weight-bolder">intersection of technology, data, and creative expression</span>. With a background in data science, he turns complex datasets into meaningful stories. His studies in computing arts have sparked his love for <span className="text-success font-weight-bolder">using technology as a medium for art</span>, allowing him to create dynamic and immersive experiences. He loves art and technology and enjoys developing projects that combine these fields to <span className="text-success font-weight-bolder">inspire and innovate</span>. Feel free to browse his portfolio to see some of his recent projects, or connect with him on LinkedIn.
                 </p>
+
 
               </div>
 
               <div className="col-12 col-md-6 order-md-1">
-
-
-
                 <div className="row">
-                  <div className="col-6 mr-n5">
-                    <img src={LeftTopImg} alt="..." className="img-fluid mb-4 rounded-lg aos-init aos-animate" data-aos="fade-right" data-aos-delay="100"></img>
-                    <img src={LeftBottomImg} alt="..." className="img-fluid rounded-lg aos-init aos-animate" data-aos="fade-right" data-aos-delay="150"></img>
+
+                  <div className="col-6 mb-3">
+                    <div className="card square-card">
+                      <img
+                        src={images[currentImage]}
+                        className="card-img-top img-fluid origin-img"
+                        alt="Rotating Card"
+                      />
+                      <div
+                        className="plus-icon"
+                        data-bs-toggle="modal"
+                        data-bs-target="#aboutmeModal"
+                      >
+                        +
+                      </div>
+                    </div>
+
+                    <div
+                      className="modal fade"
+                      id="aboutmeModal"
+                      tabIndex="-1"
+                      aria-labelledby="aboutmeModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div className="modal-dialog modal-dialog-centered modal-lg">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <h5 className="modal-title" id="aboutmeModalLabel">More About Yuancheng (Kaleo)</h5>
+                            <button
+                              type="button"
+                              className="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div className="modal-body">
+                            <div className="row">
+                              <div className="col-5 align-self-center">
+                                <img
+                                  src={images[currentImage]}
+                                  className="img-fluid"
+                                  alt="Rotating Card"
+                                  style={{ borderRadius: '20px' }}
+                                />
+                              </div>
+                              <div className="col-7">
+                                <div className="dialogue">
+                                  <div className="dialogue-row">
+                                    <div className="dialogue-text">
+                                      Where are you from?
+                                    </div>
+                                  </div>
+                                  <div className="dialogue-row justify-content-end">
+                                    <div className="dialogue-phonetic">
+                                      I was born in Fujian, China, immigrated to Hawaii, USA, and I am currently living in San Diego, CA.  I usually go back to Hawaii during the winter break.
+                                    </div>
+                                  </div>
 
 
+                                  <div className="dialogue-row">
+                                    <div className="dialogue-text">
+                                      What do you usually do in your free time?
+                                    </div>
+                                  </div>
+
+                                  <div className="dialogue-row justify-content-end">
+                                    <div className="dialogue-phonetic">
+                                      🥐🍻🍵☕️🍱🎬🎳🍜🍽️🍳🚣✈️🎢📷
+                                    </div>
+                                  </div>
+
+                                  <div className="dialogue-row">
+                                    <div className="dialogue-text">
+                                      What is your MBTI?
+                                    </div>
+                                  </div>
+
+                                  <div className="dialogue-row justify-content-end">
+                                    <div className="dialogue-phonetic">
+                                      INFJ
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="col-6 mt-8">
-
-                    <img src={RightTopImg} alt="..." className="img-fluid mb-4 rounded-lg aos-init aos-animate" data-aos="fade-right"></img>
-
-                    <img src={RightBottomImg} alt="..." className="img-fluid rounded-lg aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"></img>
-
+                  <div className="col-6 mb-3">
+                    <a href="https://www.linkedin.com/in/cyc2025/" target="_blank" rel="noopener noreferrer">
+                      <div className="card square-card">
+                        <img
+                          src={linkedin_logo}
+                          className="card-img-top img-fluid origin-img"
+                          alt="LinkedIn Logo"
+                        />
+                        <div className="plus-icon">+</div>
+                      </div>
+                    </a>
                   </div>
+
+                  <div className="col-6 mb-3">
+                    <a href={Resume} target="_blank">
+                    <div className="card square-card" style={{backgroundColor:'#e8dab2'}}>
+                      <h3 className="top-center-text">Resume/CV</h3>
+                      <img
+                        src={coding_people}
+                        className="card-img-bottom img-fluid scaled-image"
+                        alt="Card 3"
+                      />
+                      <div className="plus-icon">+</div>
+                    </div>
+                    </a>
+                  </div>
+
+                  <div className="col-6 mb-3">
+                    <div className="card square-card" style={{backgroundColor:'#ffb703'}}>
+                      <h3 className="top-center-text">How to Pronounce "Yuancheng"?</h3>
+                      <img
+                        src={greet}
+                        className="card-img-bottom img-fluid scaled-image"
+                        alt="Card 4"
+                      />
+
+                      <div
+                        className="plus-icon"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        +
+                      </div>
+                    </div>
+
+                    <div
+                      className="modal fade"
+                      id="exampleModal"
+                      tabIndex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div className="modal-dialog modal-dialog-centered modal-lg">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">How to Pronounce "Yuancheng"?</h5>
+                            <button
+                              type="button"
+                              className="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div className="modal-body">
+                            <div className="row">
+                              <div className="col-4 align-self-end">
+                                <img
+                                  src={call_me}
+                                  className="card-img-top img-fluid origin-img"
+                                  alt="Call me memoji"
+                                />
+                              </div>
+                              <div className="col-8">
+                                <div className="dialogue">
+                                  <div className="dialogue-row">
+                                    <div className="dialogue-text">
+                                      How to pronounce "Yuancheng" in English Phonetic?
+                                    </div>
+                                  </div>
+                                  <div className="dialogue-row justify-content-end">
+                                    <div className="dialogue-phonetic">
+                                      yoo•an-cheng
+                                    </div>
+                                  </div>
+
+                                  <div className="dialogue-row justify-content-end">
+                                    <div className="dialogue-audio">
+                                      <audio controls>
+                                        <source src="/assets/files/english_pronoun.m4a" type="audio/mpeg" />
+                                        Your browser does not support the audio element.
+                                      </audio>
+                                    </div>
+                                  </div>
+                                  <div className="dialogue-row">
+                                    <div className="dialogue-text">
+                                      How to pronounce "源程" in Chinese 拼音 (Pinyin)?
+                                    </div>
+                                  </div>
+
+                                  <div className="dialogue-row justify-content-end">
+                                    <div className="dialogue-phonetic">
+                                      yuán chéng
+                                    </div>
+                                  </div>
+
+                                  <div className="dialogue-row justify-content-end">
+                                    <div className="dialogue-audio">
+                                      <audio controls>
+                                        <source src="/assets/files/chinese_pronounce.m4a" type="audio/mpeg" />
+                                        Your browser does not support the audio element.
+                                      </audio>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <div className="col-12">
+                        <div className="card rectangle-card">
+                          <img
+                            src="https://via.placeholder.com/600x300?text=Rectangle+Card"
+                            className="card-img-top img-fluid"
+                            alt="Rectangle Card"
+                          />
+                          <div className="plus-icon">+</div>
+                        </div>
+                      </div> */}
+
                 </div>
-
               </div>
+
+
+
+
 
             </div>
 
