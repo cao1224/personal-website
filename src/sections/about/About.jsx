@@ -116,7 +116,7 @@ const About = () => {
           <h1><span className="wave">👋</span> Aloha! I'm Yuancheng Cao.</h1>
 
           <div className="gap-2 d-md-block">
-            <a className="btn btn-primary-soft mr-5 btn-sm" href={Resume} target="_blank" role="button">View Resume</a>
+            <a className="btn btn-primary-soft mr-5 btn-sm" href={Resume} target="_blank" role="button">Hire Me!</a>
             <button id="about-me-btn" className="btn btn-secondary-soft btn-sm" type="button" onClick={scrollToAbout}>About Me <FaAnglesDown className="animated-icon" /></button>
           </div>
         </div>
@@ -200,6 +200,18 @@ const About = () => {
                               </div>
                               <div className="col-7">
                                 <div className="dialogue">
+
+                                <div className="dialogue-row">
+                                    <div className="dialogue-text">
+                                      What is your preferred name?
+                                    </div>
+                                  </div>
+                                  <div className="dialogue-row justify-content-end">
+                                    <div className="dialogue-phonetic">
+                                      Kaleo
+                                    </div>
+                                  </div>
+
                                   <div className="dialogue-row">
                                     <div className="dialogue-text">
                                       Where are you from?
@@ -262,20 +274,20 @@ const About = () => {
 
                   <div className="col-6 mb-3">
                     <a href={Resume} target="_blank">
-                    <div className="card square-card" style={{backgroundColor:'#e8dab2'}}>
-                      <h3 className="top-center-text">Resume/CV</h3>
-                      <img
-                        src={coding_people}
-                        className="card-img-bottom img-fluid scaled-image"
-                        alt="Card 3"
-                      />
-                      <div className="plus-icon">+</div>
-                    </div>
+                      <div className="card square-card" style={{ backgroundColor: '#e8dab2' }}>
+                        <h3 className="top-center-text">Resume/CV</h3>
+                        <img
+                          src={coding_people}
+                          className="card-img-bottom img-fluid scaled-image"
+                          alt="Card 3"
+                        />
+                        <div className="plus-icon">+</div>
+                      </div>
                     </a>
                   </div>
 
                   <div className="col-6 mb-3">
-                    <div className="card square-card" style={{backgroundColor:'#ffb703'}}>
+                    <div className="card square-card" style={{ backgroundColor: '#ffb703' }}>
                       <h4 className="top-center-text">How to Pronounce "Yuancheng"?</h4>
                       <img
                         src={greet}
@@ -321,6 +333,7 @@ const About = () => {
                               </div>
                               <div className="col-8">
                                 <div className="dialogue">
+                              
                                   <div className="dialogue-row">
                                     <div className="dialogue-text">
                                       How to pronounce "Yuancheng" in English Phonetic?

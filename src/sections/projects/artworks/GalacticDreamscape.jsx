@@ -15,7 +15,14 @@ import Nebulae2 from '/assets/img/galactic_dreamscape_data/nebulae_2.jpg';
 import Nebulae3 from '/assets/img/galactic_dreamscape_data/nebulae_3.jpg';
 import Star1 from '/assets/img/galactic_dreamscape_data/star_1.jpg';
 
+import relevantWork1 from '/assets/img/galactic_dreamscape_data/relevant_work_1.gif';
+import relevantWork2 from '/assets/img/galactic_dreamscape_data/relevant_work_2.png';
+import relevantWork3 from '/assets/img/galactic_dreamscape_data/relevant_work_3.jpg';
+
+
 const GalacticDreamscape = () => {
+
+    const [activeSection, setActiveSection] = useState('ideation');
 
     useEffect(() => {
         document.title = "Galactic Dreamscape [2024] - Kaleo Cao";
@@ -29,397 +36,670 @@ const GalacticDreamscape = () => {
                 <div className='container'>
 
                     <div className="col-12 col-md-10 col-lg-8">
-                        <h2 className="row text-capitalize font-weight-bolder">Galactic Dreamscape [2024]</h2>
+                        <h2 className="row text-capitalizeer">Galactic Dreamscape [2024]</h2>
                     </div>
 
                     <div className="bordered-div py-2 my-4 fs-6 fw-light">
-                        Technique: TouchDesigner, Kinect/Leap Motion<br/>
+                        Technique: TouchDesigner, Kinect/Leap Motion<br />
                     </div>
 
                 </div>
 
-                <section id="goal">
-                    <div className="container">
-                        <h3 className="text-capitalize font-weight-bold">Goal</h3>
-                        <p >
-                            Creating an immersive experience that transports participants into a fantastical space exploration journey. Using cutting-edge technology, the installation combines particle effects, fluid simulations, human body movement, and NASA datasets to generate a dynamic and interactive visual environment. Through the integration of machine learning, participants’ movements will interact with cosmic visuals, creating a symbiotic relationship between the human body and the universe.
-                        </p>
-                    </div>
-                </section>
 
-                <section id="current_state">
+                <div className="container btn-group mb-3" role="group">
+                    <button
+                        type="button"
+                        className={`btn btn-sm btn-primary-soft ${activeSection === 'ideation' ? 'active' : ''}`}
+                        onClick={() => setActiveSection('ideation')}
+                    >
+                        Ideation
+                    </button>
+                    <button
+                        type="button"
+                        className={`btn btn-sm btn-primary-soft ${activeSection === 'threeWorks' ? 'active' : ''}`}
+                        onClick={() => setActiveSection('threeWorks')}
+                    >
+                        Three Relevant Works
+                    </button>
+                    <button
+                        type="button"
+                        className={`btn btn-sm btn-primary-soft ${activeSection === 'timeline' ? 'active' : ''}`}
+                        onClick={() => setActiveSection('timeline')}
+                    >
+                        Timeline
+                    </button>
+
+                </div>
+
+                <div>
+                    {activeSection === 'ideation' && (
+                        <div className="container mt-6">
+                            {/* Concepts */}
+                            <div className='mb-4'>
+                                <h3 className="text-capitalize">Concepts</h3>
+                                <p >
+                                    Creating an immersive experience that transports participants into a fantastical space exploration journey. Using cutting-edge technology, the installation combines particle effects, fluid simulations, human body movement, and NASA datasets to generate a dynamic and interactive visual environment. Through the integration of machine learning, participants’ movements will interact with cosmic visuals, creating a symbiotic relationship between the human body and the universe.
+                                </p>
+                            </div>
+
+                            {/* Inspiration */}
+                            <div className='mb-4'>
+                                <h3 className="text-capitalize">Inspiration</h3>
+                                <ul className="list-bullet">
+                                    <li>
+                                        <strong>Space Exploration:</strong> Drawing inspiration from NASA’s missions, data, and images, the installation will use authentic celestial data to create realistic space environments.
+                                    </li>
+                                    <li>
+                                        <strong>Human Motion and Dance:</strong> The instillation seeks to emulate the grace of astronauts floating in zero gravity.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            {/* Art Installation Design */}
+                            <div className='mb-4'>
+                                <h3 className="text-capitalize">Art Installation Design</h3>
+
+                                <h5 className="text-capitalize">Space Fantasy Environment</h5>
+                                <ul className="list-bullet">
+                                    <li>
+                                        <strong>Visual:</strong> Using StreamDiffusionTD, the installation will generate real-time img2img transformations to create evolving space landscapes. Participants will find themselves surrounded by swirling nebulas, star fields, and alien terrains that react their presence.
+                                    </li>
+                                    <li>
+                                        <strong>Human Body Movement:</strong> Participants’ movements will be tracked using Leap Motion sensors, translating their gestures and poses into visual data. This data will influence the particle simulations and fluid dynamics, creating a responsive and interactive visual experience.
+                                    </li>
+                                    <li>
+                                        <strong>Fluid Simulation:</strong> Integrating advanced fluid simulation techniques, the installation will mimic the flowing and weightless nature of space, creating visuals and swirl and morph in response to human interaction.
+                                    </li>
+                                </ul>
+
+                                <h5 className="text-capitalize">Interactive Components</h5>
+                                <ul className="list-bullet">
+                                    <li>
+                                        <strong>Particle Effects:</strong> The installation will feature interactive particle system that react to human movement. As participants move, particles will follow their gestures, creating trails and shapes that mimic cosmic dust, energy flows, and nebula formations.
+                                    </li>
+                                    <li>
+                                        <strong>AI Integration:</strong> Using machine learning algorithms, the installation will analyze and adapt to the participants’ movements, ensuring that each interaction is unique.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            {/* Critical */}
+                            <div className='mb-4'>
+                                <h3 className="text-capitalize">Critical</h3>
+
+                                <h5 className="text-capitalize">How is it critical of current modes of operation?</h5>
+                                <ul className="list-bullet">
+                                    <li>
+                                        This project challenges current art installations by not just using NASA data for storytelling but making it highly interactive with real-time human movement. Unlike traditional methods that pre-generate content, this installation will be based on participants’ actions. It pushes the boundaries by integrating fluid simulations and particle effects, creating a more immersive experience.
+                                    </li>
+                                </ul>
+
+                                <h5 className="text-capitalize">Why I want to make this art installation?</h5>
+                                <ul className="list-bullet">
+                                    <li>
+                                        The installation aims to influence human perception by making the concept of living in space more tangible and relatable. By experiencing the beauty and complexity of the cosmos through interactive art, participants can develop a deeper emotional and intellectual connection to the idea of space habitation. This connection can lead to greater public interest and support for space exploration initiatives. “Galactic Dreamscape” encourages human to consider the challenges and opportunities of future space habitats. It highlights the potential for art and technology to shape our understanding and approach to living in space.
+                                    </li>
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+                    )}
+                    {activeSection === 'threeWorks' && (
+
+                        <div class="container mt-6">
+                            <div class="row row mb-5">
+                                <div class="col-sm-8">
+                                    <p><strong>Title: </strong>Learning to see: We are made of star dust</p>
+                                    <p><strong>Artist: </strong>Memo Akten</p>
+                                    <p><strong>Year: </strong>2017</p>
+                                    <p><strong>Technique: </strong>custom software, AI, machine learning, deep learning, generative adversarial networks</p>
+                                    <p><strong>Link: </strong><a href='https://www.memo.tv/works/we-are-made-of-star-dust/' target='_blank' style={{ color: 'black', textDecoration: 'underline' }}>https://www.memo.tv/works/we-are-made-of-star-dust/</a></p>
+                                    <p><strong>Paper: </strong><a href='https://research.gold.ac.uk/id/eprint/30191/1/COM_thesis_AktenM_2021.pdf' target='_blank' style={{ color: 'black', textDecoration: 'underline' }}>https://research.gold.ac.uk/id/eprint/30191/1/COM_thesis_AktenM_2021.pdf</a></p>
+
+                                    <p><strong>Takeaways:</strong>
+                                        <ul className="list-bullet">
+                                            <li>
+                                                The system takes live video and change how it looks while reconstructing image in composition and overall shape
+                                            </li>
+                                            <li>
+                                                Train a number of models on large datasets of images &#8594; load to real-time inference software &#8594; user can manipulate a number of human-understandable parameters in real-time via a GUI
+                                            </li>
+                                            <li>
+                                                Neural network architecture based on pix2pix image-to-image translation
+                                            </li>
+                                            <li>
+                                                <strong>Data augmentation</strong>: images processing in different ways (like flipping or making them brighter) to help the computer learn better
+                                            </li>
+                                        </ul>
+                                    </p>
+
+
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src={relevantWork1} class="ml-3" alt="..." />
+                                </div>
+                            </div>
+
+                            <div className="row mb-5">
+
+                                <div class="col-sm-8">
+                                    <p><strong>Title: </strong>Universe of Water Particles under Satellite’s Gravity</p>
+                                    <p><strong>Art Collective: </strong>teamLab</p>
+                                    <p><strong>Year: </strong>2014</p>
+                                    <p><strong>Link: </strong><a href='https://www.teamlab.art/w/satellites-gravity/space-art/' target='_blank' style={{ color: 'black', textDecoration: 'underline' }}>https://www.teamlab.art/w/satellites-gravity/space-art/</a></p>
+
+                                    <p><strong>Takeaways:</strong>
+                                        <ul className="list-bullet">
+                                            <li>
+                                                A computer model of a real satellite was made in 3D
+                                            </li>
+                                            <li>
+                                                The model has fake gravity that pulls water towards it
+                                            </li>
+                                            <li>
+                                                Tiny water drops were created to act like real water
+                                            </li>
+                                            <li>
+                                                Some water drops were turned into lines to look like a waterfall
+                                            </li>
+                                            <li>
+                                                The artwork mixes old Japanese ideas with new computer tech
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <img src={relevantWork2} class="ml-3" alt="..." />
+                                </div>
+                            </div>
+
+                            <div className="row mb-5">
+
+                                <div class="col-sm-8">
+                                    <p><strong>Title: </strong>The politics of solar rhythms: Cosmic Levitation</p>
+                                    <p><strong>Artist: </strong>Tomas Saraceno</p>
+                                    <p><strong>Year: </strong>2018</p>
+                                    <p><strong>Link: </strong><a href='https://studiotomassaraceno.org/the-politics-of-solar-rhythms-cosmic-levitation/' target='_blank' style={{ color: 'black', textDecoration: 'underline' }}>https://studiotomassaraceno.org/the-politics-of-solar-rhythms-cosmic-levitation/</a></p>
+
+                                    <p><strong>Takeaways:</strong>
+                                        <ul className="list-bullet">
+                                            <li>
+                                                Using sound waves to make tiny space dust float in the air
+                                            </li>
+                                            <li>
+                                                This experiment helps understand how planets might form from space dust.
+                                            </li>
+                                            <li>
+                                                The experiment connects ideas about space, sound, and human history
+                                            </li>
+                                            <li>
+                                                The artwork uses live temperature differences to make sounds
+                                            </li>
+                                            <li>
+                                                The project mixes science experiments with art and big ideas about the universe
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <img src={relevantWork3} class="ml-3" alt="..." />
+                                </div>
+                            </div>
+
+                            <h3>Reflection</h3>
+
+                            <p className='mb-2'>
+                                &emsp; Memo Akten, teamLab, and Tomas Saraceno inspire me with their innovative use of technology and interactivity in their art. Memo’s work with machine learning and deep learning algorithms to reconstruct images aligns closely with my aesthetic goals, while teamLab’s use of simulated gravity to create waterfalls resonates with my desire to incorporate similar effects in my project proposal. Tomas Saraceno’s work make me consider narrowing down my research question or developing a more specific focus for the art installation. His use of interdisciplinary elements has also encouraged me to think about incorporating sound into my project, if time allows. This could add another layer of depth to the experience, enhancing the overall impact of the installation
+                            </p>
+
+                            <p>
+                                &emsp; I believe my project is feasible because TouchDesigner supports complex visual effects and AI integrations. I also learned a basic understanding of TouchDesigner’s components and operators. However, I need to review some of these elements again to better understanding their connection logic. I discovered these artists through different channels. I follow teamLab’s Instagram account. As for Tomas Saraceno, I learned about his work from VIS 159 class presentation last quarter, which was part of a list curated by Memo Akten. My project will use different visual element to show zero gravity. I have not decided yet. My project also uses images capture from telescope to make more futurism, unlike memo's work using nature to generate space.
+                            </p>
+
+                        </div>
+
+
+                    )}
+                    {activeSection === 'timeline' && (
+                        <section id="timeline" className="timeline_area section_padding_130 mt-6">
+                            <div className="container">
+
+                                <div className="row">
+                                    <div className="col-12">
+                                        {/* Timeline Area */}
+                                        <div className="apland-timeline-area">
+                                            {/* Week 1 */}
+                                            <div className="single-timeline-area">
+                                                <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
+                                                    <p>Week 1</p>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 1.1</h5>
+                                                                <p>Finalize project proposal</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 1.2</h5>
+                                                                <p>Install TouchDesigner, Stable Diffusion, and other necessary software</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style={{ visibility: 'visible', animationDelay: '0.7s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 1.3</h5>
+                                                                <p>Set up development environment</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Week 2 */}
+                                            <div className="single-timeline-area">
+                                                <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
+                                                    <p>Week 2</p>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 2.1</h5>
+                                                                <p>Learn TouchDesigner basic (tutorial, practice projects)</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 2.2</h5>
+                                                                <p>Find and download relevant NASA dataset</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 2.3</h5>
+                                                                <p>Refine and detail the project timeline</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Week 3 */}
+                                            <div className="single-timeline-area">
+                                                <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
+                                                    <p>Week 3</p>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 3.1</h5>
+                                                                <p>Continue learning advanced TouchDesigner techniques (particle effects and fluid simulation)</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        className="col-12 col-md-6 col-lg-4"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#take3.2Modal"
+                                                    >
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 3.2</h5>
+                                                                <p>Clean and preprocessing NASA dataset for integration</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div
+                                                        className="col-12 col-md-6 col-lg-4"
+                                                        onClick={() => setActiveSection('threeWorks')}
+                                                    >
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style={{ visibility: 'visible', animationDelay: '0.7s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 3.3</h5>
+                                                                <p>Research three relevant interactive art installation for inspiration</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Week 4 */}
+                                            <div className="single-timeline-area">
+                                                <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
+                                                    <p>Week 4</p>
+                                                </div>
+                                                <div className="row">
+                                                    <div
+                                                        className="col-12 col-md-6 col-lg-4"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#task4.1Modal"
+                                                    >
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 4.1</h5>
+                                                                <p>Begin drafting the project framework in TouchDesigner</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 4.2</h5>
+                                                                <p>Start building the project website to document progress</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            {/* Week 5 */}
+                                            <div className="single-timeline-area">
+                                                <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
+                                                    <p>Week 5</p>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 5.1</h5>
+                                                                <p>Present project progress</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 5.2</h5>
+                                                                <p>Update the project proposal</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 5.3</h5>
+                                                                <p>Experiment with initial visual element using NASA data</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 5.4</h5>
+                                                                <p>Continue refining TouchDesigner visuals and interactions</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Week 6 */}
+                                            <div className="single-timeline-area">
+                                                <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
+                                                    <p>Week 6</p>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 6.1</h5>
+                                                                <p>Implement Kinect/Leap Motion integration for tracking human movement</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 6.2</h5>
+                                                                <p>Develop basic interactive component (particle effects reacting to movement)</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Week 7 & 8*/}
+                                            <div className="single-timeline-area">
+                                                <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
+                                                    <p>Week 7 & 8</p>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 7-8.1</h5>
+                                                                <p>Start integrating cleaned NASA datasets into the project</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 7-8.2</h5>
+                                                                <p>Refine interactive elements based on testing and feedback</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 7-8.3</h5>
+                                                                <p>Continue integrating and testing NASA data within the visual elements</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            {/* Week 9 */}
+                                            <div className="single-timeline-area">
+                                                <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
+                                                    <p>Week 9</p>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 9.1</h5>
+                                                                <p>Finalize all visual and interactive elements</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+
+                                                            <div className="timeline-text">
+                                                                <h5>Task 9.2</h5>
+                                                                <p>Prepare final presentation materials</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Week 10 */}
+                                            <div className="single-timeline-area">
+                                                <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
+                                                    <p>🎉 Week 10</p>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 10.1</h5>
+                                                                <p>Complete the project website with documentation</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 10.2</h5>
+                                                                <p>Setup the installation </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 10.3</h5>
+                                                                <p>Deliver final presentation</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    )}
+
+                    <div
+                        className="modal fade"
+                        id="take3.2Modal"
+                        tabIndex="-1"
+                        aria-labelledby="take3.2ModalLabel"
+                        aria-hidden="true"
+                    >
+                        <div className="modal-dialog modal-dialog-centered modal-lg">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h5 className="modal-title" id="take3.2ModalLabel">Task 3.3 Progress</h5>
+                                    <button
+                                        type="button"
+                                        className="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div className="modal-body">
+                                    <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+                                        <div className="carousel-inner" style={{ borderRadius: '10px' }}>
+                                            <div className="carousel-item active" data-bs-interval="10000">
+                                                <img src={Galaxy1} className="d-block w-100 custom-img" alt="..." />
+                                            </div>
+                                            <div className="carousel-item" data-bs-interval="2000">
+                                                <img src={Galaxy2} className="d-block w-100 custom-img" alt="..." />
+                                            </div>
+                                            <div className="carousel-item">
+                                                <img src={Nebulae3} className="d-block w-100 custom-img" alt="..." />
+                                            </div>
+                                            <div className="carousel-item">
+                                                <img src={Galaxy3} className="d-block w-100 custom-img" alt="..." />
+                                            </div>
+                                            <div className="carousel-item">
+                                                <img src={Nebulae2} className="d-block w-100 custom-img" alt="..." />
+                                            </div>
+                                            <div className="carousel-item">
+                                                <img src={Galaxy4} className="d-block w-100 custom-img" alt="..." />
+                                            </div>
+                                            <div className="carousel-item">
+                                                <img src={Galaxy5} className="d-block w-100 custom-img" alt="..." />
+                                            </div>
+                                            <div className="carousel-item">
+                                                <img src={Galaxy6} className="d-block w-100 custom-img" alt="..." />
+                                            </div>
+                                            <div className="carousel-item">
+                                                <img src={Nebulae1} className="d-block w-100 custom-img" alt="..." />
+                                            </div>
+                                            <div className="carousel-item">
+                                                <img src={Star1} className="d-block w-100 custom-img" alt="..." />
+                                            </div>
+                                        </div>
+                                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span className="visually-hidden">Previous</span>
+                                        </button>
+                                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span className="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <p className="py-5">I selected 200 images from three categories—Galaxies, Nebulae, and Star Clusters—on the NASA website. My selection criteria were based on color, composition, and an additional factor that enhances the visual appeal and scientific significance of each image.</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        className="modal fade"
+                        id="task4.1Modal"
+                        tabIndex="-1"
+                        aria-labelledby="task4.1ModalLabel"
+                        aria-hidden="true"
+                    >
+                        <div className="modal-dialog modal-dialog-centered modal-lg">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h5 className="modal-title" id="task4.1ModalLabel">Task 4.1 Progress: Fluid Simulation</h5>
+                                    <button
+                                        type="button"
+                                        className="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div className="modal-body">
+                                    <div>
+                                        <img src={current_state_one} style={{ borderRadius: '15px' }} alt="description" />
+                                    </div>
+
+                                    <p className='py-5'>
+                                        Fluid Simulation controlled by mouse, with parameters including velocity, gradient color value, pressure, and brush stroke.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+               
+
+
+
+                {/* <section id="nextsteps">
                     <div className="container py-4">
-
-                        <h3 className="text-capitalize font-weight-bold">Current State</h3>
-
-                        <div id="carouselExampleInterval" className="carousel slide pt-6" data-bs-ride="carousel" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , width: '60vw', height: 'auto' }}>
-                            <div className="carousel-inner" style={{borderRadius: '10px'}}>
-                                <div className="carousel-item active" data-bs-interval="10000">
-                                    <img src={Galaxy1} className="d-block w-100 custom-img" alt="..." />
-                                </div>
-                                <div className="carousel-item" data-bs-interval="2000">
-                                    <img src={Galaxy2} className="d-block w-100 custom-img" alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={Nebulae3} className="d-block w-100 custom-img" alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={Galaxy3} className="d-block w-100 custom-img" alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={Nebulae2} className="d-block w-100 custom-img" alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={Galaxy4} className="d-block w-100 custom-img" alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={Galaxy5} className="d-block w-100 custom-img" alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={Galaxy6} className="d-block w-100 custom-img" alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={Nebulae1} className="d-block w-100 custom-img" alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={Star1} className="d-block w-100 custom-img" alt="..." />
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
-
-                        <p className="py-5">I selected 200 images from three categories—Galaxies, Nebulae, and Star Clusters—on the NASA website. My selection criteria were based on color, composition, and an additional factor that enhances the visual appeal and scientific significance of each image.</p>
-
-                        <div style={{ display: 'flex' }}>
-                            <img src={current_state_one} style={{ width: '50vw', height: 'auto', borderRadius: '15px' }} alt="description" />
-                        </div>
-
-                        <p className='py-5'>
-                            <strong>Fluid Simulation: </strong> controlled by mouse, with parameters including velocity, gradient color value, pressure, and brush stroke.
-                        </p>
-                    </div>
-                </section>
-
-                <section id="timeline" className="timeline_area section_padding_130 py-4">
-                    <div className="container">
-                        <div className="row ">
-                            <div className="col-12 col-sm-8 col-lg-6">
-                                <h3 className="text-capitalize font-weight-bold">Timeline</h3>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-12">
-                                {/* Timeline Area */}
-                                <div className="apland-timeline-area">
-                                    {/* Week 1 */}
-                                    <div className="single-timeline-area">
-                                        <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
-                                            <p>Week 1</p>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 1.1</h5>
-                                                        <p>Finalize project proposal</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 1.2</h5>
-                                                        <p>Install TouchDesigner, Stable Diffusion, and other necessary software</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style={{ visibility: 'visible', animationDelay: '0.7s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 1.3</h5>
-                                                        <p>Set up development environment</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Week 2 */}
-                                    <div className="single-timeline-area">
-                                        <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
-                                            <p>Week 2</p>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 2.1</h5>
-                                                        <p>Learn TouchDesigner basic (tutorial, practice projects)</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 2.2</h5>
-                                                        <p>Find and download relevant NASA dataset</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 2.3</h5>
-                                                        <p>Refine and detail the project timeline</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Week 3 */}
-                                    <div className="single-timeline-area">
-                                        <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
-                                            <p>Week 3</p>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 3.1</h5>
-                                                        <p>Continue learning advanced TouchDesigner techniques (particle effects and fluid simulation)</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 3.2</h5>
-                                                        <p>Clean and preprocessing NASA dataset for integration</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style={{ visibility: 'visible', animationDelay: '0.7s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 3.3</h5>
-                                                        <p>Research three relevant interactive art installation for inspiration</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Week 4 */}
-                                    <div className="single-timeline-area">
-                                        <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
-                                            <p>Week 4</p>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 4.1</h5>
-                                                        <p>Begin drafting the project framework in TouchDesigner</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 4.2</h5>
-                                                        <p>Start building the project website to document progress</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                    {/* Week 5 */}
-                                    <div className="single-timeline-area">
-                                        <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
-                                            <p>Week 5</p>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 5.1</h5>
-                                                        <p>Present project progress</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 5.2</h5>
-                                                        <p>Update the project proposal</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 5.3</h5>
-                                                        <p>Experiment with initial visual element using NASA data</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 5.4</h5>
-                                                        <p>Continue refining TouchDesigner visuals and interactions</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Week 6 */}
-                                    <div className="single-timeline-area">
-                                        <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
-                                            <p>Week 6</p>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 6.1</h5>
-                                                        <p>Implement Kinect/Leap Motion integration for tracking human movement</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 6.2</h5>
-                                                        <p>Develop basic interactive component (particle effects reacting to movement)</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Week 7 & 8*/}
-                                    <div className="single-timeline-area">
-                                        <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
-                                            <p>Week 7 & 8</p>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 7-8.1</h5>
-                                                        <p>Start integrating cleaned NASA datasets into the project</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 7-8.2</h5>
-                                                        <p>Refine interactive elements based on testing and feedback</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 7-8.3</h5>
-                                                        <p>Continue integrating and testing NASA data within the visual elements</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    {/* Week 9 */}
-                                    <div className="single-timeline-area">
-                                        <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
-                                            <p>Week 9</p>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 9.1</h5>
-                                                        <p>Finalize all visual and interactive elements</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-
-                                                    <div className="timeline-text">
-                                                        <h5>Task 9.2</h5>
-                                                        <p>Prepare final presentation materials</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Week 10 */}
-                                    <div className="single-timeline-area">
-                                        <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInLeft' }}>
-                                            <p>🎉 Week 10</p>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 10.1</h5>
-                                                        <p>Complete the project website with documentation</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 10.2</h5>
-                                                        <p>Setup the installation </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 10.3</h5>
-                                                        <p>Deliver final presentation</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="nextsteps">
-                    <div className="container py-4">
-                        <h3 className="text-capitalize font-weight-bold">Next Steps</h3>
+                        <h3 className="text-capitalize">Next Steps</h3>
                         <ul className="list-bullet">
                             <li>
                                 <strong>Human Face Detection and Alien Generation:</strong> Utilize TouchDesigner and ComfyUI or Stable Diffusion to generate an alien image based on the participant's face.
@@ -449,11 +729,11 @@ const GalacticDreamscape = () => {
 
 
                     </div>
-                </section>
+                </section> */}
 
                 <section>
                     <div className="container py-4">
-                    <h5 className="text-capitalize font-weight-bold">Random Recommended works</h5>
+                        <h5 className="text-capitalize">Random Recommended works</h5>
                     </div>
                 </section>
 
