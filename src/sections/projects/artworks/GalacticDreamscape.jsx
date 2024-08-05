@@ -453,6 +453,19 @@ const GalacticDreamscape = () => {
                                                         </div>
                                                     </div>
 
+                                                    <div
+                                                        className="col-12 col-md-6 col-lg-4"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#task5.4Modal"
+                                                    >
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 5.4</h5>
+                                                                <p>Develop the final workflow design in TouchDesigner, detailing how each component connects and interacts.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
 
                                                 </div>
                                             </div>
@@ -729,10 +742,10 @@ const GalacticDreamscape = () => {
 
 
                                     <h4>After</h4>
-                                    <img src={task5_3_add} className='pb-5' style={{ width: '50%', height: '50%'}} alt="description" />
+                                    <img src={task5_3_add} className='pb-5' style={{ width: '50%', height: '50%' }} alt="description" />
 
                                     <div className="ratio ratio-16x9">
-                                    
+
                                         <video className="w-100" controls autoplay muted>
                                             <source src={task5_3progress_video} type="video/mp4" />
                                             Your browser does not support the video tag.
@@ -744,6 +757,42 @@ const GalacticDreamscape = () => {
                                     </p>
 
                                 </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Task 5.4 Modal */}
+                    <div
+                        className="modal fade"
+                        id="task5.4Modal"
+                        tabIndex="-1"
+                        aria-labelledby="task5.4ModalLabel"
+                        aria-hidden="true"
+                    >
+                        <div className="modal-dialog modal-dialog-centered modal-xl">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h5 className="modal-title" id="task5.4ModalLabel">Task 5.4 Progress: Design Workflow in TouchDesigner</h5>
+                                    <button
+                                        type="button"
+                                        className="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div className="modal-body" style={{ height: '80vh' }}>
+                                    <iframe
+                                        style={{
+                                            border: '1px solid rgba(0, 0, 0, 0.1)',
+                                            width: '100%',
+                                            height: '100%',
+                                        }}
+                                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FTEW2c0iBpmELL66caGyXdq%2FICAM-Senior-Project-Workflow%3Fnode-id%3D0-1%26t%3D4FaHa90C9GyAb134-1"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+
 
                             </div>
                         </div>
