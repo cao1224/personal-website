@@ -14,6 +14,9 @@ import Nebulae1 from '/assets/img/galactic_dreamscape_data/nebulae_1.jpg';
 import Nebulae2 from '/assets/img/galactic_dreamscape_data/nebulae_2.jpg';
 import Nebulae3 from '/assets/img/galactic_dreamscape_data/nebulae_3.jpg';
 import Star1 from '/assets/img/galactic_dreamscape_data/star_1.jpg';
+import task5_3_before from '/assets/img/galactic_dreamscape_data/task5-3_before.png';
+import task5_3_add from '/assets/img/galactic_dreamscape_data/task5-3_add.jpg';
+import task5_3progress_video from '/assets/img/galactic_dreamscape_data/task5.3-progress-video.mp4';
 
 import relevantWork1 from '/assets/img/galactic_dreamscape_data/relevant_work_1.gif';
 import relevantWork2 from '/assets/img/galactic_dreamscape_data/relevant_work_2.png';
@@ -437,7 +440,11 @@ const GalacticDreamscape = () => {
                                                         </div>
                                                     </div>
 
-                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                    <div
+                                                        className="col-12 col-md-6 col-lg-4"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#task5.3Modal"
+                                                    >
                                                         <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
                                                             <div className="timeline-text">
                                                                 <h5>Task 5.3</h5>
@@ -446,14 +453,7 @@ const GalacticDreamscape = () => {
                                                         </div>
                                                     </div>
 
-                                                    <div className="col-12 col-md-6 col-lg-4">
-                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
-                                                            <div className="timeline-text">
-                                                                <h5>Task 5.4</h5>
-                                                                <p>Continue refining TouchDesigner visuals and interactions</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+
                                                 </div>
                                             </div>
 
@@ -463,11 +463,15 @@ const GalacticDreamscape = () => {
                                                     <p>Week 6</p>
                                                 </div>
                                                 <div className="row">
-                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                    <div
+                                                        className="col-12 col-md-6 col-lg-4"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#task6.1Modal"
+                                                    >
                                                         <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
                                                             <div className="timeline-text">
                                                                 <h5>Task 6.1</h5>
-                                                                <p>Implement Kinect/Leap Motion integration for tracking human movement</p>
+                                                                <p>Fill out Exhibition List with my project information</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -476,6 +480,15 @@ const GalacticDreamscape = () => {
                                                         <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
                                                             <div className="timeline-text">
                                                                 <h5>Task 6.2</h5>
+                                                                <p>Implement Kinect/Leap Motion integration for tracking human movement</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-12 col-md-6 col-lg-4">
+                                                        <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
+                                                            <div className="timeline-text">
+                                                                <h5>Task 6.3</h5>
                                                                 <p>Develop basic interactive component (particle effects reacting to movement)</p>
                                                             </div>
                                                         </div>
@@ -687,13 +700,120 @@ const GalacticDreamscape = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Task 5.3 Modal */}
+                    <div
+                        className="modal fade"
+                        id="task5.3Modal"
+                        tabIndex="-1"
+                        aria-labelledby="task5.3ModalLabel"
+                        aria-hidden="true"
+                    >
+                        <div className="modal-dialog modal-dialog-centered modal-lg">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h5 className="modal-title" id="task5.3ModalLabel">Task 5.3 Progress</h5>
+                                    <button
+                                        type="button"
+                                        className="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div className="modal-body">
+
+                                    <h4>Before</h4>
+                                    <div className='pb-4'>
+                                        <img src={task5_3_before} style={{ width: '50%', height: '40%', borderRadius: '15px' }} alt="description" />
+                                    </div>
+
+
+                                    <h4>After</h4>
+                                    <img src={task5_3_add} className='pb-5' style={{ width: '50%', height: '50%'}} alt="description" />
+
+                                    <div className="ratio ratio-16x9">
+                                    
+                                        <video className="w-100" controls autoplay muted>
+                                            <source src={task5_3progress_video} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+
+                                    <p className='py-5'>
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Task 6.1 Modal */}
+                    <div
+                        className="modal fade"
+                        id="task6.1Modal"
+                        tabIndex="-1"
+                        aria-labelledby="task6.1ModalLabel"
+                        aria-hidden="true"
+                    >
+                        <div className="modal-dialog modal-dialog-centered modal-lg">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h5 className="modal-title" id="task6.1ModalLabel">Task 6.1 Progress</h5>
+                                    <button
+                                        type="button"
+                                        className="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div className="modal-body">
+                                    <ul className="list-bullet">
+                                        <li>
+                                            <strong>Title:</strong> Galactic Dreamscape
+                                        </li>
+                                        <li>
+                                            <strong>Format:</strong> Digital media, projection, and interactive technology
+                                        </li>
+                                        <li>
+                                            <strong>Website:</strong> <a href="https://www.kaleo-cao.com/artworks/GalacticDreamscape" target='_blank' style={{ color: 'black', textDecoration: 'underline' }}> https://www.kaleo-cao.com/artworks/GalacticDreamscape</a>
+                                        </li>
+                                        <li>
+                                            <strong>Equipment Specifications: </strong> Computer installed the TouchDesigner, Kinect, and Projector [Resolution: 1024x768; Throw Distance: 5.3' - 34.3']
+                                        </li>
+                                        <li>
+                                            <strong>Installation Specifications: </strong> <br></br>
+                                            <ul className="list-bullet">
+                                                <li><strong>Gallery Space</strong>: Minimum 10x10 feet, depending on the projection size and viewer interaction area</li>
+                                            </ul>
+
+                                            <p className='font-weight-bold'>Setup</p>
+                                            <ul className="list-bullet">
+                                                <li><strong>Kinect</strong>: Place the Kinect at a height that captures the entire interaction area.</li>
+                                                <li><strong>Projector</strong>: Mount the projector securely and alig it with the projector surface.</li>
+                                                <li><strong>Computer</strong>: Place the computer in flat area near the projector and Kinect.</li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <strong>PR Image (150x150) & Doc image (150/x150):</strong>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
 
 
 
 
-               
+
 
 
 
