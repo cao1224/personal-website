@@ -773,7 +773,7 @@ const GalacticDreamscape = () => {
                         <div className="modal-dialog modal-dialog-centered modal-xl">
                             <div className="modal-content">
                                 <div className="modal-header">
-                                    <h5 className="modal-title" id="task5.4ModalLabel">Task 5.4 Progress: Design Workflow in TouchDesigner</h5>
+                                    <h5 className="modal-title" id="task5.4ModalLabel">Task 5.4 Progress: System Design</h5>
                                     <button
                                         type="button"
                                         className="btn-close"
