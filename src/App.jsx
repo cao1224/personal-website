@@ -6,6 +6,7 @@ import About from '../src/sections/about/About';
 import Projects from '../src/sections/projects/Projects';
 import Gallery from '../src/sections/gallery/Gallery';
 import GalacticDreamscape from '../src/sections/projects/artworks/GalacticDreamscape.jsx';
+import BionicBalance from '../src/sections/projects/artworks/BionicBalance.jsx';
 
 
 
@@ -46,6 +47,7 @@ function App() {
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/gallery' element={<Gallery/>}/>
         <Route path='/artworks/GalacticDreamscape' element={<GalacticDreamscape/>}/>
+        <Route path='/artworks/BionicBalance' element={<BionicBalance/>}/>
       </Routes>
     </Router>
   );

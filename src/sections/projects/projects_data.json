@@ -4,9 +4,9 @@
     "year": 2024,
     "field_of_study": "art",
     "transferable_skills": [
-      ""
+      "creative", "learning-agility"
     ],
-    "description": "",
+    "description": "An immersive installation transports participants into a galactic dreamscape, blending particle effects, fluid simulations, and NASA datasets. The installation forms a symbiotic relationship between humans and the universe, using Stable Diffusion and immersive audio for a full sensory experience.",
     "image": "/assets/img/galactic_dreamscape_data/galactic_dreamscape.png",
     "badges": [
       {
@@ -40,14 +40,14 @@
     "year": 2024,
     "field_of_study": "art",
     "transferable_skills": [
-      "creative"
+      "creative", "learning-agility", "critical-thinking"
     ],
     "description": "",
     "image": "/assets/img/bionic_balance_cover.JPG",
     "badges": [
       {
         "type": "artist-statement",
-        "link": ""
+        "link": "./artworks/BionicBalance"
       }
     ]
   },
