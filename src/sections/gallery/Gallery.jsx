@@ -1,49 +1,66 @@
 import React, { useRef, useState, useEffect } from 'react';
+import CarouselSlide from '../../components/CarouselSlide';
 
 import Navbar from '../navBar/Navbar';
 import Footer from '../footer/Footer';
 
-const Projects = () => {
-    const [selectedYear, setSelectedYear] = useState('');
-    const [selectedField, setSelectedField] = useState('');
-    const [selectedSkills, setSelectedSkills] = useState([]);
+const Gallery = () => {
 
-    const handleYearChange = (e) => {
-        setSelectedYear(e.target.value);
-    };
+    const sd_zoo_images = [
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-1.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-2.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-3.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-4.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-5.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-6.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-7.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-8.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-9.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-10.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-11.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-12.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-13.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/san_diego_zoo/img-14.png'
+    ];
 
-    const handleFieldChange = (e) => {
-        setSelectedField(e.target.value);
-    };
+    const ls_real_bodies = [
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/real-bodies/img-1.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/real-bodies/img-2.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/real-bodies/img-3.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/real-bodies/img-4.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/real-bodies/img-5.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/real-bodies/img-6.png',
+        'https://photography-gallery.s3.us-east-2.amazonaws.com/real-bodies/img-7.png'
+    ];
 
-    const handleSkillChange = (e) => {
-        const skill = e.target.value;
-        setSelectedSkills((prevSkills) =>
-        prevSkills.includes(skill)
-            ? prevSkills.filter((s) => s !== skill)
-            : [...prevSkills, skill]
-        );
-    };
-
-    // const filteredProjects = projects.filter((project) => {
-    //     const yearMatch = selectedYear ? project.year === parseInt(selectedYear) : true;
-    //     const fieldMatch = selectedField ? project.field === selectedField : true;
-    //     const skillsMatch = selectedSkills.length
-    //     ? selectedSkills.every((skill) => project.skills.includes(skill))
-    //     : true;
-
-    //     return yearMatch && fieldMatch && skillsMatch;
-    // });
 
     return (
         <div>
             <Navbar />
             <main className='container'>
-               
+                <div className="container">
+                    <h2 className="text-capitalize font-weight-bold">photography gallery</h2>
+                    <p></p>
+                </div>
+
+
+                <div className='container'>
+                    <div className="row gx-3 gy-4">
+                        <div className="col-12 col-md-6">
+                            <CarouselSlide id="carousel1" images={sd_zoo_images} />
+                        </div>
+                        <div className="col-12 col-md-6">
+                            <CarouselSlide id="carousel2" images={ls_real_bodies} />
+                        </div>
+                    </div>
+                </div>
+
             </main>
-            <Footer/>
+
+
+            <Footer />
         </div>
     )
 }
 
-export default Projects
+export default Gallery
