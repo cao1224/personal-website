@@ -12,9 +12,10 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className="container mt-6 pt-6">
+        <footer className="footer mt-auto">
             <div className='container'>
-                <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div className='row py-3 border-top'>
+                <div className="d-flex flex-wrap justify-content-between align-items-center">
                     <p className="col-md-5 mb-0 text-body-secondary">&copy; <span id="current-year">{currentYear}</span> Yuancheng Cao. All rights reserved.</p>
 
 
@@ -37,9 +38,10 @@ const Footer = () => {
                             </a>
                         </li>
                     </ul>
-                </footer>
+                </div>
+                </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

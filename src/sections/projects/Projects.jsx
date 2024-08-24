@@ -21,33 +21,33 @@ const Projects = () => {
         transferable_skills: ['none'],
     });
 
-    
+
 
     const handleFilterClick = (filterType, filterValue) => {
         setFilters(prevFilters => {
-          let newValues = [...prevFilters[filterType]];
-    
-          if (filterValue === 'all' || filterValue === 'none') {
-            newValues = [filterValue];
-          } else {
-            if (newValues.includes(filterValue)) {
-              newValues = newValues.filter(item => item !== filterValue);
+            let newValues = [...prevFilters[filterType]];
+
+            if (filterValue === 'all' || filterValue === 'none') {
+                newValues = [filterValue];
             } else {
-              newValues = newValues.filter(item => item !== 'all' && item !== 'none');
-              newValues.push(filterValue);
+                if (newValues.includes(filterValue)) {
+                    newValues = newValues.filter(item => item !== filterValue);
+                } else {
+                    newValues = newValues.filter(item => item !== 'all' && item !== 'none');
+                    newValues.push(filterValue);
+                }
+
+                if (newValues.length === 0) {
+                    newValues = filterType === 'transferable_skills' ? ['none'] : ['all'];
+                }
             }
-    
-            if (newValues.length === 0) {
-              newValues = filterType === 'transferable_skills' ? ['none'] : ['all'];
-            }
-          }
-    
-          return {
-            ...prevFilters,
-            [filterType]: newValues,
-          };
+
+            return {
+                ...prevFilters,
+                [filterType]: newValues,
+            };
         });
-      };
+    };
 
     const filterProjects = () => {
         return projects.filter(project => {
@@ -59,7 +59,7 @@ const Projects = () => {
     };
 
     const filteredProjects = filterProjects();
-   
+
 
 
     return (
@@ -68,21 +68,21 @@ const Projects = () => {
             <main className='container'>
                 <div className="container">
                     {/* <!-- Discovery Projects Header --> */}
-                    <div className="row">
 
-                        {/* <!-- Preheading --> */}
-                        <h2 className="text-capitalize font-weight-bold">Discovery Projects</h2>
-                        <p>Welcome to a showcase of all my projects that are both innovative and interesting, and in which I have been involved. Here, you will find projects that often blend technology and creativity, and serve as a testament to the endless possibilities that can be achieved through dedication and a curious mindset. These projects range from coding experiments and data visualizations to creative content and community initiatives. They reflect my passion for learning, creating, and contributing positively to the world around me. Feel free to explore and reach out if you'd like to collaborate or learn more!</p>
 
-                    </div> {/* <!-- / .row --> */}
+                    {/* <!-- Preheading --> */}
+                    <h2 className="text-capitalize font-weight-bold">Discovery Projects</h2>
+                    <p>Welcome to a showcase of all my projects that are both innovative and interesting, and in which I have been involved. Here, you will find projects that often blend technology and creativity, and serve as a testament to the endless possibilities that can be achieved through dedication and a curious mindset. These projects range from coding experiments and data visualizations to creative content and community initiatives. They reflect my passion for learning, creating, and contributing positively to the world around me. Feel free to explore and reach out if you'd like to collaborate or learn more!</p>
+
+
                 </div> {/* <!-- / .container --> */}
 
                 <div className="container mt-5">
                     {/* <!-- Year Section --> */}
-                    <div className="row">
-                        <div className="mb-3">
-                            <h4>Year</h4>
-                            {/* <div className="btn-group-toggle" data-toggle="buttons">
+
+                    <div className="mb-3">
+                        <h4>Year</h4>
+                        {/* <div className="btn-group-toggle" data-toggle="buttons">
                                 <label className="btn btn-sm btn-white font-weight-normal mr-2 mb-2">
                                     <input type="checkbox" className="btn-checkbox" autoComplete="off" value="all-year" />All
                                 </label>
@@ -99,34 +99,34 @@ const Projects = () => {
                                     <input type="checkbox" className="btn-checkbox" autoComplete="off" value="2021" />2021
                                 </label>
                             </div> */}
+                        <button
+                            className="btn btn-sm btn-white fw-normal fs-6 mr-2 mb-2"
+                            onClick={() => handleFilterClick('year', 'all')}
+                            style={{ backgroundColor: filters.year.includes('all') ? '#cae9be' : '' }}
+                        >
+                            All
+                        </button>
+                        {[2024, 2023, 2022, 2021].map(year => (
                             <button
-                                className="btn btn-sm btn-white fw-normal fs-6 mr-2 mb-2"
-                                onClick={() => handleFilterClick('year', 'all')}
-                                style={{ backgroundColor: filters.year.includes('all') ? '#cae9be' : '' }}
+                                key={year}
+                                className="btn btn-sm btn-white font-weight-normal fs-6 mr-2 mb-2"
+                                onClick={() => handleFilterClick('year', year.toString())}
+                                style={{ backgroundColor: filters.year.includes(year.toString()) ? '#cae9be' : '' }}
                             >
-                                All
+                                {year}
                             </button>
-                            {[2024, 2023, 2022, 2021].map(year => (
-                                <button
-                                    key={year}
-                                    className="btn btn-sm btn-white font-weight-normal fs-6 mr-2 mb-2"
-                                    onClick={() => handleFilterClick('year', year.toString())}
-                                    style={{ backgroundColor: filters.year.includes(year.toString()) ? '#cae9be' : '' }}
-                                >
-                                    {year}
-                                </button>
-                            ))}
+                        ))}
 
 
 
-                        </div>
                     </div>
 
+
                     {/* <!-- Field of Study Section --> */}
-                    <div className="row">
-                        <div className="mb-3">
-                            <h4>Field of Study</h4>
-                            {/* <div className="btn-group-toggle" data-toggle="buttons">
+
+                    <div className="mb-3">
+                        <h4>Field of Study</h4>
+                        {/* <div className="btn-group-toggle" data-toggle="buttons">
                                 <label className="btn btn-sm btn-white font-weight-normal mr-2 mb-2">
                                     <input type="checkbox" className="btn-checkbox" autoComplete="off" value="all-study" />All
                                 </label>
@@ -141,31 +141,31 @@ const Projects = () => {
                                 </label>
                             </div> */}
 
+                        <button
+                            className="btn btn-sm btn-white font-weight-normal fs-6 mr-2 mb-2"
+                            onClick={() => handleFilterClick('field_of_study', 'all')}
+                            style={{ backgroundColor: filters.field_of_study.includes('all') ? '#cae9be' : '' }}
+                        >
+                            All
+                        </button>
+                        {['computer-science', 'data-science', 'art'].map(field => (
                             <button
-                                className="btn btn-sm btn-white font-weight-normal fs-6 mr-2 mb-2"
-                                onClick={() => handleFilterClick('field_of_study', 'all')}
-                                style={{ backgroundColor: filters.field_of_study.includes('all') ? '#cae9be' : '' }}
+                                key={field}
+                                className="btn btn-sm btn-white text-capitalize font-weight-normal fs-6 mr-2 mb-2"
+                                onClick={() => handleFilterClick('field_of_study', field)}
+                                style={{ backgroundColor: filters.field_of_study.includes(field) ? '#cae9be' : '' }}
                             >
-                                All
+                                {field.replace('-', ' ')}
                             </button>
-                            {['computer-science', 'data-science', 'art'].map(field => (
-                                <button
-                                    key={field}
-                                    className="btn btn-sm btn-white text-capitalize font-weight-normal fs-6 mr-2 mb-2"
-                                    onClick={() => handleFilterClick('field_of_study', field)}
-                                    style={{ backgroundColor: filters.field_of_study.includes(field) ? '#cae9be' : '' }}
-                                >
-                                    {field.replace('-', ' ')}
-                                </button>
-                            ))}
-                        </div>
+                        ))}
                     </div>
 
+
                     {/* Transferable Skills */}
-                    <div className='row'>
-                        <div className='mb-3'>
-                            <h4>Transferable Skills</h4>
-                            {/* <div className="btn-group-toggle" data-toggle="buttons">
+
+                    <div className='mb-3'>
+                        <h4>Transferable Skills</h4>
+                        {/* <div className="btn-group-toggle" data-toggle="buttons">
                                 <div className="btn-group-toggle" data-toggle="buttons">
                                     {['None', 'Problem-Solving', 'Creativity', 'Communication', 'Collaboration', 'Critical Thinking', 'Learning Agility'].map((skill) => (
                                         <label key={skill} className="btn btn-sm btn-white font-weight-normal mr-2 mb-3">
@@ -183,29 +183,29 @@ const Projects = () => {
 
 
                             </div> */}
+                        <button
+                            className="btn btn-sm btn-white font-weight-normal mr-2 mb-2 fs-6"
+                            onClick={() => handleFilterClick('transferable_skills', 'none')}
+                            style={{ backgroundColor: filters.transferable_skills.includes('none') ? '#cae9be' : '' }}
+                        >
+                            None
+                        </button>
+                        {['problem-solving', 'creative', 'communication', 'collaboration', 'critical-thinking', 'learning-agility'].map(skill => (
                             <button
-                                className="btn btn-sm btn-white font-weight-normal mr-2 mb-2 fs-6"
-                                onClick={() => handleFilterClick('transferable_skills', 'none')}
-                                style={{ backgroundColor: filters.transferable_skills.includes('none') ? '#cae9be' : '' }}
+                                key={skill}
+                                className="btn btn-sm btn-white font-weight-normal text-capitalize mr-2 mb-2 fs-6"
+                                onClick={() => handleFilterClick('transferable_skills', skill)}
+                                style={{ backgroundColor: filters.transferable_skills.includes(skill) ? '#cae9be' : '' }}
                             >
-                                None
+                                {skill.replace('-', ' ')}
                             </button>
-                            {['problem-solving', 'creative', 'communication', 'collaboration', 'critical-thinking', 'learning-agility'].map(skill => (
-                                <button
-                                    key={skill}
-                                    className="btn btn-sm btn-white font-weight-normal text-capitalize mr-2 mb-2 fs-6"
-                                    onClick={() => handleFilterClick('transferable_skills', skill)}
-                                    style={{ backgroundColor: filters.transferable_skills.includes(skill) ? '#cae9be' : '' }}
-                                >
-                                    {skill.replace('-', ' ')}
-                                </button>
-                            ))}
-                        </div>
+                        ))}
                     </div>
+
                 </div>
 
                 <div className="container">
-                    <div className="row mb-2">
+                    <div className="mb-2">
                         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 align-items-stretch g-4 py-5">
                             {filteredProjects.map((project, index) => (
                                 <div className="col pb-5" key={index} data-year={project.year} data-study={project.field_of_study}>
@@ -215,7 +215,7 @@ const Projects = () => {
                                         </div>
                                         <h5>{project.title}</h5>
                                         {project.badges.map((badge, idx) => (
-                                            <a key={idx} href={badge.link} target = '_blank' className={`badge badge-${badge.type} mb-3 text-capitalize ${idx < project.badges.length - 1 ? 'mr-3' : ''}`}>
+                                            <a key={idx} href={badge.link} target='_blank' className={`badge badge-${badge.type} mb-3 text-capitalize ${idx < project.badges.length - 1 ? 'mr-3' : ''}`}>
                                                 {badge.type.replace('-', ' ')}
                                             </a>
                                         ))}
@@ -228,7 +228,6 @@ const Projects = () => {
 
                 </div>
             </main>
-            <Footer />
         </div>
     )
 }

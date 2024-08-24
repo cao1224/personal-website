@@ -927,7 +927,6 @@ const GalacticDreamscape = () => {
                 </section>
 
             </main >
-            <Footer />
         </div >
     )
 }

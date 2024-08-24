@@ -12,10 +12,6 @@
       {
         "type": "artist-statement",
         "link": "./artworks/GalacticDreamscape"
-      },
-      {
-        "type": "report",
-        "link": ""
       }
     ]
   },
@@ -83,11 +79,7 @@
     "badges": [
       {
         "type": "artist-statement",
-        "link": ""
-      },
-      {
-        "type": "video",
-        "link": ""
+        "link": "./artworks/Hues"
       }
     ]
   },
@@ -103,10 +95,6 @@
     "badges": [
       {
         "type": "artist-statement",
-        "link": ""
-      },
-      {
-        "type": "video",
         "link": ""
       }
     ]
@@ -214,7 +202,7 @@
     "description": "This project combines art and game design using JavaScript and p5.js to create an interactive experience that highlights the effects of climate change on ecosystems and encourages users to make environmentally conscious decisions.",
     "image": "/assets/img/interactiveModel.JPG",
     "badges": [
-      {"type": "artist-statement", "link": ""}
+      {"type": "artist-statement", "link": "./artworks/LivingOnEdge"}
     ]
   },
   {

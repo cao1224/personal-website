@@ -95,7 +95,7 @@ const Navbar = () => {
             <a href="/#skillset" className={`nav-link w-nav-link ${activeLink === '/#skillset' ? 'active-link' : ''}`} style={{ maxWidth: '100%' }}>Skillset</a>
             <a href="/#experiences" className={`nav-link w-nav-link ${activeLink === '/#experiences' ? 'active-link' : ''}`} style={{ maxWidth: '100%' }}>Experiences</a>
             <Link to="/projects" className={`nav-link w-nav-link ${activeLink === '/projects' ? 'active-link' : ''}`} style={{ maxWidth: '100%' }}>Projects</Link>
-            <Link to="/gallery" className={`nav-link w-nav-link ${activeLink === '/gallery' ? 'active-link' : ''}`} style={{ maxWidth: '100%' }}>Gallery</Link>
+            <Link to="/gallery" className={`nav-link w-nav-link ${activeLink === '/gallery' ? 'active-link' : ''}`} style={{ maxWidth: '100%' }}>Photography</Link>
           </nav>
         </div>
       </div>

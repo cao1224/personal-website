@@ -44,7 +44,10 @@
     box-sizing: border-box
 }
 
+
 html {
+    height: 100%;
+    margin: 0;
     scroll-behavior: smooth;
     font-family: sans-serif;
     line-height: 1.15;
@@ -66,7 +69,10 @@ section {
 }
 
 body {
+    height: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -20363,7 +20369,7 @@ ol.list-decimal li {
 }
 
 .dialogue-text {
-    background-color: #3bb4ff;  
+    background-color: #3bb4ff;
     border-radius: 30px;
     padding: 10px;
     max-width: 70%;
@@ -20371,31 +20377,69 @@ ol.list-decimal li {
 
 .scaled-image {
     transition: opacity 0.5s ease-in-out;
-  }
-  
-  .hidden {
+}
+
+.hidden {
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
-  }
-  
-  .visible {
+}
+
+.visible {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
-  }
-  
-  .carousel-image-wrapper {
+}
+
+.carousel-image-wrapper {
     width: 100%;
-    padding-top: 66.67%; /* This enforces a 6:4 aspect ratio (height / width = 4/6 = 0.6667) */
+    padding-top: 66.67%;
+    /* This enforces a 6:4 aspect ratio (height / width = 4/6 = 0.6667) */
     position: relative;
     overflow: hidden;
+}
+
+
+.carousel-container {
+    position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Same height as the carousel container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgba(255, 255, 255, 0.2); /* 20% white */
+    color: #000; /* Ensure the text is readable */
+    text-align: center;
+    z-index: 10; /* Ensures the title is above the images */
+    pointer-events: none; /* Prevents interfering with carousel controls */
   }
-  
-  .carousel-image {
+
+.carousel-image-wrapper {
+    position: relative;
+}
+
+.carousel-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire area without distorting */
-  }
-  
+    object-fit: cover;
+}
+
+.location-link {
+    color: black;
+    text-decoration: none;
+}
+
+.location-link:hover {
+    text-decoration: underline;
+}
+
+

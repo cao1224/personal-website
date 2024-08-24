@@ -1,8 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 
 import Navbar from '../../navBar/Navbar';
-import Footer from '../../footer/Footer';
-
 
 
 const BionicBalance= () => {
@@ -39,7 +37,7 @@ const BionicBalance= () => {
                 </section> */}
 
             </main >
-            <Footer />
+
         </div >
     )
 }

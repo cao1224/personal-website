@@ -7,7 +7,9 @@ import Projects from '../src/sections/projects/Projects';
 import Gallery from '../src/sections/gallery/Gallery';
 import GalacticDreamscape from '../src/sections/projects/artworks/GalacticDreamscape.jsx';
 import BionicBalance from '../src/sections/projects/artworks/BionicBalance.jsx';
-
+import Navbar from '../src/sections/navBar/Navbar';
+import Footer from '../src/sections/footer/Footer';
+import GallerySinglePage from '../src/components/GallerySinglePage.jsx';
 
 
 function App() {
@@ -42,13 +44,20 @@ function App() {
 
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path='/projects' element={<Projects/>}/>
-        <Route path='/gallery' element={<Gallery/>}/>
-        <Route path='/artworks/GalacticDreamscape' element={<GalacticDreamscape/>}/>
-        <Route path='/artworks/BionicBalance' element={<BionicBalance/>}/>
-      </Routes>
+      <div className="d-flex flex-column min-vh-100">
+        <main className="flex-grow-1">
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path='/projects' element={<Projects/>}/>
+            <Route path='/gallery' element={<Gallery/>}/>
+            <Route path='/artworks/GalacticDreamscape' element={<GalacticDreamscape/>}/>
+            <Route path='/artworks/BionicBalance' element={<BionicBalance/>}/>
+
+            <Route path="/gallery/:title" element={<GallerySinglePage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
