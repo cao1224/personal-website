@@ -3,13 +3,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 import About from '../src/sections/about/About';
+
 import Projects from '../src/sections/projects/Projects';
-import Gallery from '../src/sections/gallery/Gallery';
 import GalacticDreamscape from '../src/sections/projects/artworks/GalacticDreamscape.jsx';
 import BionicBalance from '../src/sections/projects/artworks/BionicBalance.jsx';
-import Navbar from '../src/sections/navBar/Navbar';
-import Footer from '../src/sections/footer/Footer';
+import Hues from '../src/sections/projects/artworks/Hues.jsx';
+import LivingOnEdge from '../src/sections/projects/artworks/LivingOnEdge.jsx';
+
+import Gallery from '../src/sections/gallery/Gallery';
 import GallerySinglePage from '../src/components/GallerySinglePage.jsx';
+
+import Footer from '../src/sections/footer/Footer';
 
 
 function App() {
@@ -52,6 +56,8 @@ function App() {
             <Route path='/gallery' element={<Gallery/>}/>
             <Route path='/artworks/GalacticDreamscape' element={<GalacticDreamscape/>}/>
             <Route path='/artworks/BionicBalance' element={<BionicBalance/>}/>
+            <Route path='/artworks/Hues' element={<Hues />}/>
+            <Route path='/artworks/LivingOnEdge' element={<LivingOnEdge />}/>
 
             <Route path="/gallery/:title" element={<GallerySinglePage />} />
           </Routes>

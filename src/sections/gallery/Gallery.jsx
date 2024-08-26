@@ -90,7 +90,7 @@ const Gallery = () => {
             <Navbar />
             <main className='container'>
                 <div className="container">
-                    <h2 className="text-capitalize font-weight-bold">photography gallery</h2>
+                    <h1 className="text-capitalize font-weight-bold">photography gallery</h1>
                     <p>Welcome to this photography gallery! Here, you'll discover a collection of moments captured during travels and spontaneous experiences. Whether taken at famous attractions with a camera or snapped on the go with a phone, each photo showcases unique moments and the ever-changing beauty of nature. The photographer hopes these images convey the joy and wonder experienced while capturing them. Enjoy exploring the stories behind each shot!</p>
                 </div>
 

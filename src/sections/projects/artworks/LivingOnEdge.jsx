@@ -17,7 +17,7 @@ const LivingOnEdge= () => {
                 <div className='container'>
 
                     <div className="col-12 col-md-10 col-lg-8">
-                        <h2 className="row text-capitalizeer">Living on the Edge [2024]</h2>
+                        <h2 className="row text-capitalizeer">Living on the Edge [2023]</h2>
                     </div>
 
                     <div className="bordered-div py-2 my-4 fs-6 fw-light">

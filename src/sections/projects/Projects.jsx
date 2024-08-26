@@ -71,7 +71,7 @@ const Projects = () => {
 
 
                     {/* <!-- Preheading --> */}
-                    <h2 className="text-capitalize font-weight-bold">Discovery Projects</h2>
+                    <h1 className="text-capitalize font-weight-bold">Discovery Projects</h1>
                     <p>Welcome to a showcase of all my projects that are both innovative and interesting, and in which I have been involved. Here, you will find projects that often blend technology and creativity, and serve as a testament to the endless possibilities that can be achieved through dedication and a curious mindset. These projects range from coding experiments and data visualizations to creative content and community initiatives. They reflect my passion for learning, creating, and contributing positively to the world around me. Feel free to explore and reach out if you'd like to collaborate or learn more!</p>
 
 

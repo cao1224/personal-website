@@ -49,7 +49,7 @@ const GalacticDreamscape = () => {
 
                 </div>
 
-                <div className="container pb-6">
+                {/* <div className="container pb-6">
                     <audio controls>
                         <source src="/assets/img/galactic_dreamscape_data/sample.mp3" type="audio/mp3" />
                         Your browser does not support the audio element.
@@ -66,7 +66,7 @@ const GalacticDreamscape = () => {
                         ></iframe>
                     </div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
-                </div>
+                </div> */}
 
 
                 <div className="container btn-group mb-3" role="group">

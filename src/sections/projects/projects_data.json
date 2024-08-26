@@ -74,7 +74,7 @@
     "transferable_skills": [
       ""
     ],
-    "description": "Can art help us figure out our feelings better? Art can make us feel a lot of different things. This project combines the social media posts with artistic effects to explore the digital expression of emotions. It integrates two datasets: facial images and messages from Kaggle.",
+    "description": "Can art help us figure out our feelings better? Art can make us feel a lot of different things.",
     "image": "/assets/img/hues_cover.png",
     "badges": [
       {
@@ -90,7 +90,7 @@
     "transferable_skills": [
       ""
     ],
-    "description": "An art installation blending electronic technologies with the raw beauty of natural elements to create an ever-changing visual experience. It has a small motor with a magnet that spins and moves iron powder in a sealed box. Lights under the box shine in a magical way, and a mist maker adds a dreamy feel. Inside are a tiny car and rocks, also with magnets, that change how the iron powder moves.",
+    "description": "An art installation blending electronic technologies with the raw beauty of natural elements to create an ever-changing visual experience.",
     "image": "/assets/img/magnetic_motion_cover.JPG",
     "badges": [
       {
@@ -106,7 +106,7 @@
     "transferable_skills": [
       ""
     ],
-    "description": "This project analyzes Kuaishou's recommender system, evaluating models like ALS, Gradient Boosting, and Time-series Prediction to enhance friend and video suggestions, with varying accuracies and real-time adaptation features.",
+    "description": "The analysis of Kuaishou's recommender system involves evaluating machine learning models to enhance friend and video suggestions, with varying accuracies and real-time adaptation features.",
     "image": "/assets/img/cse258_cover.JPG",
     "badges": [
       {
@@ -122,7 +122,7 @@
     "transferable_skills": [
       ""
     ],
-    "description": "This project is an automated plant watering system designed to constantly monitor plant health, automate watering, and allow remote management. It is motivated by the need for a reliable system to maintain plants, contributing to healthier indoor environments, and the desire to create a smart, adaptive plant care system.",
+    "description": "An automated plant watering system designed to constantly monitor plant health, automate watering, and allow remote management.",
     "image": "/assets/img/green-thumbs.png",
     "badges": [
       {
@@ -158,7 +158,7 @@
     "transferable_skills": [
       ""
     ],
-    "description": "FlexBody is an Android fitness app for tracking exercise and nutrition, maintaining lists, and sharing progress through pictures.",
+    "description": "An Android fitness app for tracking exercise and nutrition, maintaining lists, and sharing progress through pictures.",
     "image": "/assets/img/flexBody-wireframes.png",
     "badges": [
       {
@@ -228,11 +228,11 @@
     ]
   },
   {
-    "title": "Open-source Project: Open Energy Dashboard",
+    "title": "Open Energy Dashboard",
     "year": 2022,
     "field_of_study": "computer-science",
     "transferable_skills": [""],
-    "description": "This project addresses dynamic OED page buttons, making them fixed with the current page marked (e.g., grayed out) for better usability.",
+    "description": "An open-source project addresses dynamic OED page buttons, making them fixed with the current page marked (e.g., grayed out) for better usability.",
     "image": "/assets/img/OED.gif",
     "badges": [
       {"type": "code", "link": "https://github.com/OpenEnergyDashboard/OED/pull/807"}
