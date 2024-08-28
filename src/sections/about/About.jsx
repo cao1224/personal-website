@@ -6,7 +6,7 @@ import Footer from '../footer/Footer';
 
 import Resume from "/assets/files/Yuancheng_Cao_Resume.pdf";
 
-
+import headerCover from "/assets/img/cover_image.png";
 import ucsdCover from "/assets/img/photo-ucsd.jpg";
 import codepathCover from "/assets/img/CodePath.jpeg";
 import Apprentice from '/assets/img/apprentice.png';
@@ -119,7 +119,9 @@ const About = () => {
             <a className="btn btn-primary-soft mr-5 btn-sm" href={Resume} target="_blank" role="button">Hire Me!</a>
             <button id="about-me-btn" className="btn btn-secondary-soft btn-sm" type="button" onClick={scrollToAbout}>About Me <FaAnglesDown className="animated-icon" /></button>
           </div>
+
         </div>
+        <img src={headerCover} alt="Self Portrait" className="self-portrait" />
 
       </div>
 
@@ -129,7 +131,7 @@ const About = () => {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-10 col-lg-8">
-                <h3 className="text-uppercase font-weight-bold">About ME</h3>
+                <h2 className="text-uppercase font-weight-bold">About ME</h2>
               </div>
             </div>
 
@@ -414,7 +416,7 @@ const About = () => {
               <div className="col-12 col-md-10 col-lg-8">
 
                 {/* <!-- Preheading --> */}
-                <h3 className="text-uppercase font-weight-bold">Education</h3>
+                <h2 className="text-uppercase font-weight-bold">Education</h2>
 
               </div>
             </div>  {/* <!-- / .row --> */}
@@ -629,7 +631,7 @@ const About = () => {
             <div className="row">
               <div className="col-12 col-md-10 col-lg-8">
 
-                <h3 className="text-uppercase font-weight-bold">skillset</h3>
+                <h2 className="text-uppercase font-weight-bold">skillset</h2>
 
               </div>
             </div>
@@ -754,7 +756,7 @@ const About = () => {
               <div className="col-12 col-md-10 col-lg-8">
 
                 {/* <!-- Preheading --> */}
-                <h3 className="text-uppercase font-weight-bold">Experiences</h3>
+                <h2 className="text-uppercase font-weight-bold">Experiences</h2>
 
               </div>
             </div> {/* <!-- / .row --> */}

@@ -16244,13 +16244,13 @@ a.badge-artist-statement:hover {
 }
 
 .btn-primary-soft {
-    background-color: rgba(51, 94, 234, .1);
+    background-color: rgba(51, 94, 234, .3);
     color: #335eea
 }
 
 .btn-primary-soft:focus,
 .btn-primary-soft:hover {
-    background-color: rgba(51, 94, 234, .3);
+    background-color: rgba(51, 94, 234, .5);
     color: #335eea
 }
 
@@ -16260,13 +16260,13 @@ a.badge-artist-statement:hover {
 }
 
 .btn-secondary-soft {
-    background-color: rgba(80, 102, 144, .1);
+    background-color: rgba(80, 102, 144, .3);
     color: #506690
 }
 
 .btn-secondary-soft:focus,
 .btn-secondary-soft:hover {
-    background-color: rgba(80, 102, 144, .3);
+    background-color: rgba(80, 102, 144, .5);
     color: #506690
 }
 
@@ -20443,3 +20443,10 @@ ol.list-decimal li {
 }
 
 
+.self-portrait {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 70%;
+}
