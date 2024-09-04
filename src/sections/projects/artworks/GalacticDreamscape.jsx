@@ -22,6 +22,7 @@ import relevantWork1 from '/assets/img/galactic_dreamscape_data/relevant_work_1.
 import relevantWork2 from '/assets/img/galactic_dreamscape_data/relevant_work_2.png';
 import relevantWork3 from '/assets/img/galactic_dreamscape_data/relevant_work_3.jpg';
 
+import finalImg1 from '/assets/img/galactic_dreamscape_data/final_img1.png';
 
 const GalacticDreamscape = () => {
 
@@ -49,6 +50,8 @@ const GalacticDreamscape = () => {
 
                 </div>
 
+               
+
                 {/* <div className="container pb-6">
                     <audio controls>
                         <source src="/assets/img/galactic_dreamscape_data/sample.mp3" type="audio/mp3" />
@@ -67,7 +70,11 @@ const GalacticDreamscape = () => {
                     </div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                 </div> */}
-
+                
+                <div className="container pb-6">
+                <img src={finalImg1} style={{ width: '50%', height: '40%', borderRadius: '15px' }} alt="description" />
+                </div>
+                
 
                 <div className="container btn-group mb-3" role="group">
                     <button
