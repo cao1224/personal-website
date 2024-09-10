@@ -20443,10 +20443,91 @@ ol.list-decimal li {
 }
 
 
-.self-portrait {
+// .self-portrait {
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     width: auto;
+//     height: 70%;
+// }
+
+/* Common styles for both images */
+.responsive-img {
     position: absolute;
-    bottom: 0;
+  bottom: 0;
+  object-fit: contain; /* Ensures the entire image stays visible */
+  max-width: 100%; /* Prevents the image from overflowing horizontally */
+  max-height: 100%; /* Ensures the image doesn't exceed container height */
+  height: auto;
+  width: auto;
+  }
+  
+  .img-left {
+    left: 0;
+  }
+  
+  .img-right {
     right: 0;
-    width: auto;
-    height: 70%;
-}
+  }
+  
+  /* For container-xxl (width: 1320px) */
+  @media (min-width: 1200px) {
+    .img-left {
+      width: 345px;
+      height: 610px;
+    }
+    .img-right {
+      width: 590px;
+      height: 520px;
+    }
+  }
+  
+  /* For container-xl (width: 1140px) and container-lg (width: 960px) */
+  @media (min-width: 992px) and (max-width: 1199.98px),
+         (min-width: 768px) and (max-width: 991.98px) {
+    .img-left {
+      width: 300px;
+      height: 530px;
+    }
+    .img-right {
+      width: 545px;
+      height: 500px;
+    }
+  }
+  
+  /* For container-md (width: 540px) */
+  @media (min-width: 540px) and (max-width: 767.98px) {
+    .img-left {
+      width: 200px;
+      height: 360px;
+    }
+    .img-right {
+      width: 310px;
+      height: 280px;
+    }
+  }
+  
+  /* For container-sm (width: 540px) */
+  @media (max-width: 539.98px) {
+    .img-left {
+      width: 180px;
+      height: 340px;
+    }
+    .img-right {
+      width: 290px;
+      height: 260px;
+    }
+  }
+  
+  /* For container width: 393px and height: 852px */
+  @media (max-width: 393px) {
+    .img-left {
+      width: 160px;
+      height: 320px;
+    }
+    .img-right {
+      width: 270px;
+      height: 240px;
+    }
+  }
+  

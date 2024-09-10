@@ -2,11 +2,12 @@ import React, { useRef, useState, useEffect } from 'react';
 
 import Navbar from '../navBar/Navbar';
 import PdfModal from '../../components/PdfModal';
-import Footer from '../footer/Footer';
 
 import Resume from "/assets/files/Yuancheng_Cao_Resume.pdf";
 
 import headerCover from "/assets/img/cover_image.png";
+import heade_Cover_Layer1 from "/assets/img/heade_Cover_Layer1.png";
+import heade_Cover_Layer2 from "/assets/img/heade_Cover_Layer2.png";;
 import ucsdCover from "/assets/img/photo-ucsd.jpg";
 import codepathCover from "/assets/img/CodePath.jpeg";
 import Apprentice from '/assets/img/apprentice.png';
@@ -109,7 +110,7 @@ const About = () => {
   return (
 
     <div>
-      <div id="header">
+      <div id="header" className="position-relative" style={{ height: '100vh' }}>
         <Navbar />
 
         <div id="welcome-container">
@@ -121,7 +122,22 @@ const About = () => {
           </div>
 
         </div>
-        <img src={headerCover} alt="Self Portrait" className="self-portrait" />
+
+
+      
+          {/* Image 1 - Bottom Left */}
+          <img
+            src={heade_Cover_Layer1}
+            alt="Image 1"
+            className="responsive-img img-left"
+          />
+          {/* Image 2 - Bottom Right */}
+          <img
+            src={heade_Cover_Layer2}
+            alt="Image 2"
+            className="responsive-img img-right"
+          />
+   
 
       </div>
 
@@ -203,7 +219,7 @@ const About = () => {
                               <div className="col-7">
                                 <div className="dialogue">
 
-                                <div className="dialogue-row">
+                                  <div className="dialogue-row">
                                     <div className="dialogue-text">
                                       What is your preferred name?
                                     </div>
@@ -335,7 +351,7 @@ const About = () => {
                               </div>
                               <div className="col-8">
                                 <div className="dialogue">
-                              
+
                                   <div className="dialogue-row">
                                     <div className="dialogue-text">
                                       How to pronounce "Yuancheng" in English Phonetic?
