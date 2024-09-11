@@ -92,8 +92,6 @@ const GalacticDreamscape = () => {
                         ))}
                     </div>
 
-
-
                     <p className="pt-6">Space has always captured our imagination and inspired us to dream beyond Earth.
                         This fascination with the universe has sparked countless artistic creations,
                         each attempting to bring the wonders of the universe to us. For my senior project,
@@ -102,9 +100,8 @@ const GalacticDreamscape = () => {
                     </p>
 
                     <p className="pt-4">
-                        The inspiration for this project comes from two main sources: NASA's space missions
-                        and the graceful movements of astronauts in zero gravity. The NASA Hubble Space Telescope
-                        and James Webb Space Telescope have provided breathtaking images of galaxies, nebulae, and
+                        The inspiration for this project comes from two main sources: <a href="https://www.nasa.gov/missions/" target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>NASA's space missions</a> and
+                        the graceful movements of astronauts in zero gravity. The NASA <a href="https://science.nasa.gov/mission/hubble/multimedia/hubble-images/" target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>Hubble Space Telescope</a> and <a href="https://science.nasa.gov/mission/webb/" target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>James Webb Space Telescope</a> have provided breathtaking images of galaxies, nebulae, and
                         star clusters that offer a glimpse into the vast beauty of the universe. These cosmic vistas
                         serve as the backdrop for the installation, creating a realistic dreamscape that transports
                         viewers to the far reaches of space. At the same time, the project draws inspiration from the
@@ -123,16 +120,15 @@ const GalacticDreamscape = () => {
                     </p>
 
                     <p className="pt-4">
-                        This artwork draws on several influential work in the field of technology-driven art.
-                        Memo Akten's work "Learning to see: We are made of star dust" demonstrates how artificial intelligence
+                        This artwork draws on several influential work in the field of technology-driven art. <a href="https://www.memo.tv/works/we-are-made-of-star-dust/" target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>Memo Akten's work "Learning to see: We are made of star dust"</a> demonstrates how artificial intelligence
                         and machine learning can transform live video in real time to create visually impressive effects. This
                         technique of using neural networks to process images in real time inspired the project's approach to creating
-                        dynamic, resonsive visuals. Second, teamLab's "Universe of Water Particles under Satellite's Gravity" offers
+                        dynamic, resonsive visuals. Second, <a href="https://www.teamlab.art/w/satellites-gravity/" target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>teamLab's "Universe of Water Particles under Satellite's Gravity"</a> offers
                         insights into how 3D modeling and particle systems can be used to create interactive installations. By simulating
                         the effects of gravity on water particles, teamLab has created a work that blends traditional Japanese
                         aesthetics with modern technology. This fusion of old and new serves as an example of how space-themed art
-                        can bridge different cultural and technological spheres. Third, Tomas Saraceno's "The politics of solar rhythms: Cosmic Levitation"
-                        provides a unique perspective on how sound can be used to manipulate physical objects, mimicking the
+                        can bridge different cultural and technological spheres. Third, <a href="https://studiotomassaraceno.org/the-politics-of-solar-rhythms-cosmic-levitation/" target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>Tomas Saraceno's "The politics of solar rhythms: Cosmic Levitation"</a> provides
+                        a unique perspective on how sound can be used to manipulate physical objects, mimicking the
                         formation of planets from cosmic dust. This integration of scientific principles into art has
                         influenced the current project's aim to make abstract space concepts more tangible and relatable to viewers.
                     </p>
@@ -141,6 +137,8 @@ const GalacticDreamscape = () => {
 
                 <section id="timeline" className="timeline_area section_padding_130 mt-6">
                     <div className="container">
+
+                        <p>Below is a 10-week timeline. Only certain task progress is visible: Task 2.1, Task 3.2, Task 3.3, Task 4.1, Task 5.3, and Task 6.1.</p>
 
                         <div className="row">
                             <div className="col-12">
@@ -164,18 +162,11 @@ const GalacticDreamscape = () => {
                                                 <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeInLeft' }}>
                                                     <div className="timeline-text">
                                                         <h5>Task 1.2</h5>
-                                                        <p>Install TouchDesigner, Stable Diffusion, and other necessary software</p>
+                                                        <p>Install TouchDesigner, Stable Diffusion, Sonic Pi, and Leap Motion</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="col-12 col-md-6 col-lg-4">
-                                                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style={{ visibility: 'visible', animationDelay: '0.7s', animationName: 'fadeInLeft' }}>
-                                                    <div className="timeline-text">
-                                                        <h5>Task 1.3</h5>
-                                                        <p>Set up development environment</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </div>
 
@@ -185,7 +176,11 @@ const GalacticDreamscape = () => {
                                             <p>Week 2</p>
                                         </div>
                                         <div className="row">
-                                            <div className="col-12 col-md-6 col-lg-4">
+                                            <div
+                                                className="col-12 col-md-6 col-lg-4"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#task2.1Modal"
+                                            >
                                                 <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
                                                     <div className="timeline-text">
                                                         <h5>Task 2.1</h5>
@@ -325,11 +320,7 @@ const GalacticDreamscape = () => {
                                                 </div>
                                             </div>
 
-                                            <div
-                                                className="col-12 col-md-6 col-lg-4"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#task5.4Modal"
-                                            >
+                                            <div className="col-12 col-md-6 col-lg-4">
                                                 <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInLeft' }}>
                                                     <div className="timeline-text">
                                                         <h5>Task 5.4</h5>
@@ -490,29 +481,54 @@ const GalacticDreamscape = () => {
                         <source src="/assets/img/galactic_dreamscape_data/sample.mp3" type="audio/mp3" />
                         Your browser does not support the audio element.
                     </audio>
-
-
-                    <div style={{ padding: '55% 0 0 0', position: 'relative' }}>
-                        <iframe
-                            src="https://player.vimeo.com/video/1000504206?badge=0&autopause=0&player_id=0&app_id=58479"
-                            
-                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                            style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
-                            title="Particle System Progress"
-                        ></iframe>
-                    </div>
-                    <script src="https://player.vimeo.com/api/player.js"></script>
                 </div> */}
-
-
-
-
-
 
 
                 <div className="container mt-6 mb-6">
 
-                    <p className="pt-4 pb-6">
+                    <p>
+                        The project begins with a careful selection of 120 NASA images covering three categories: galaxies, nebulae, and star clusters. These images were chosen for their color, composition, and unique features that enhance their visual appeal.
+                    </p>
+
+                    <p className='pt-4 pb-4'>
+                        The core of the installation uses StreamDiffusionTD to create real-time img2img transformations.
+                        This process generates evolving dreamscapes, transforming the NASA images into surreal and imaginative
+                        versions of world. The system cycles through the image database every minute, ensuring a constantly evolving
+                        visual experience. To add variety, 27 different prompts are used, switching randomly every 30 seconds.
+                        The seed for StreamDiffusionTD changes each second, resulting in smooth transitions between states.
+                    </p>
+
+                    <div style={{ height: '50vh' }}>
+                        <iframe
+                            style={{
+                                border: '1px solid rgba(0, 0, 0, 0.1)',
+                                width: '100%',
+                                height: '100%',
+                            }}
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FTEW2c0iBpmELL66caGyXdq%2FICAM-Senior-Project-Workflow%3Fnode-id%3D0-1%26t%3D4FaHa90C9GyAb134-1"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+
+                    <p className='pt-4 pb-4'>
+                        Participant interaction is a key element of the installation. Leap Motion tracks human body movements,
+                        translating gestures and poses into visual data. This data then influences particle simulations and fluid
+                        dynamics within the projected image, creating a responsive and interactive experience. In zero gravity, the astronauts move with smooth, fluid motions due to the lack of gravity, which normally creates drag. Their movements are a delicate balance between controlled motion and inertia, allowing them to glide effortlessly through space. In this art installation, when Leap Motion detects an active gesture, the system simulates the dynamic motion of the astronauts deliberately applying force. This causes the particles to move faster and with more energy, representing intentional behavior in space. Conversely, when no gestures are detected, the particles move very slowly, mimicking the stillness experienced by astronauts when they are not moving, reflecting the calm and weightless nature of zero gravity. The interplay between fast and slow movements mimics the real-world space environment, emphasizing both active and passive states of motion. The final output is projected onto a 12 by 10 foot wall in the <a href="https://sites.google.com/ucsd.edu/kamilgallery" target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>Kamil Gallery</a> at UC San Diego. This large-scale display immerses viewers in a dynamic, interactive representation of space, blending real NASA imagery with artistic interpretation and human interaction
+                    </p>
+
+
+                    <h3 className="text-capitalize">Galactic Dreamscape Gallery Walkthrough</h3>
+                    <div style={{ position: 'relative', width: '100%', height: 0, paddingBottom: '45%' }}>
+                        <iframe
+                            src="https://player.vimeo.com/video/1007852050?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
+                            frameBorder="0"
+                            allow="autoPlay; fullscreen; picture-in-picture; clipboard-write"
+                            style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+                            title="Galactic Dreamscape Gallery Walkthrough"
+                        ></iframe>
+                    </div>
+
+                    <p className="pt-4 pb-4">
                         The driving force behind this work is the desire to change people's perception of space and the
                         possibility of living beyond Earth. By creating an immersive experience, the installation aims
                         to create a deeper emotional and intellectual connection between the viewer and the concept of
@@ -522,39 +538,65 @@ const GalacticDreamscape = () => {
                         elements, the installation serves as a bridge between scientific knowledge and public engagement.
                     </p>
 
-                    <h3 className="text-capitalize">Galactic Dreamscape Gallery Walkthrough</h3>
+                    <h5 style={{ display: 'inline' }}>Prompt: </h5>
+                    <p style={{ display: 'inline' }}>alien creature in bioluminescent alien forest, fireflies glowing like distant stars, photorealistic detail, vivid colors</p>
                     <div style={{ position: 'relative', width: '100%', height: 0, paddingBottom: '45%' }}>
                         <iframe
-                            src="https://player.vimeo.com/video/1007852050?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
+                            src="https://player.vimeo.com/video/1007870343?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
                             frameBorder="0"
                             allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                             style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
-                            title="Galactic Dreamscape Gallery Walkthrough"
+                            title="Beautiful Mystical Forest"
                         ></iframe>
                     </div>
 
-                    {/* Art Installation Design */}
-                    <div className='mb-4'>
+                </div>
 
 
-                        <h5 className="text-capitalize">Space Fantasy Environment</h5>
-                        <ul className="list-bullet">
-                            <li>
-                                <strong>Visual:</strong> Using StreamDiffusionTD, the installation will generate real-time img2img transformations to create evolving space landscapes. Participants will find themselves surrounded by swirling nebulas, star fields, and alien terrains that react their presence.
-                            </li>
-                            <li>
-                                <strong>Human Body Movement:</strong> Participants’ movements will be tracked using Leap Motion sensors, translating their gestures and poses into visual data. This data will influence the particle simulations and fluid dynamics, creating a responsive and interactive visual experience.
-                            </li>
+                {/* Task 2.1 Modal */}
+                <div
+                    className="modal fade"
+                    id="task2.1Modal"
+                    tabIndex="-1"
+                    aria-labelledby="task2.1ModalLabel"
+                    aria-hidden="true"
+                >
+                    <div className="modal-dialog modal-dialog-centered modal-lg">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="task2.1ModalLabel">Task 2.1 Progress: TouchDesigner Tutorials</h5>
+                                <button
+                                    type="button"
+                                    className="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <div className="modal-body">
 
-                        </ul>
 
-                        <h5 className="text-capitalize">Interactive Components</h5>
-                        <ul className="list-bullet">
-                            <li>
-                                <strong>Particle Effects:</strong> The installation will feature interactive particle system that react to human movement. As participants move, particles will follow their gestures, creating trails and shapes that mimic cosmic dust, energy flows, and nebula formations.
-                            </li>
+                                <ol style={{ listStyleType: 'decimal' }}>
+                                    <li className="pb-3" style={{ listStyleType: 'decimal' }}>
+                                        <a href="https://www.youtube.com/watch?v=ri2XMqzANuk&list=PLuhCUvWVIxlMABNlGSZ8t703Q7vG27bCt" target="_blank" style={{ color: '#0000EE', textDecoration: 'underline' }} rel="noopener noreferrer">
+                                            Tutorial – How to use Stable Diffusion for Architecture students (YouTube)
+                                        </a>
+                                    </li>
+                                    <li className="pb-3" style={{ listStyleType: 'decimal' }}>
+                                        <a href="https://www.youtube.com/playlist?list=PLpuCjVEMQha9rjhDET3uuE0T3UeIcROJu" target="_blank" style={{ color: '#0000EE', textDecoration: 'underline' }} rel="noopener noreferrer">
+                                            TouchDesigner Tutorial: Beginner Crash Course (YouTube Playlist)
+                                        </a>
+                                    </li>
+                                    <li style={{ listStyleType: 'decimal' }}>
+                                        <a href="https://derivative.ca/UserGuide/Tutorials" target="_blank" style={{ color: '#0000EE', textDecoration: 'underline' }} rel="noopener noreferrer">
+                                            TouchDesigner Official Website User Guide Tutorials
+                                        </a>
+                                    </li>
+                                </ol>
 
-                        </ul>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
@@ -636,7 +678,7 @@ const GalacticDreamscape = () => {
                     aria-labelledby="task3.3ModalLabel"
                     aria-hidden="true"
                 >
-                    <div className="modal-dialog modal-dialog-centered modal-lg">
+                    <div className="modal-dialog modal-dialog-centered modal-xl">
                         <div className="modal-content">
                             <div className="modal-header">
                                 <h5 className="modal-title" id="task3.3ModalLabel">Task 3.3 Progress: Research Three Relevant Works</h5>
@@ -647,17 +689,19 @@ const GalacticDreamscape = () => {
                                     aria-label="Close"
                                 ></button>
                             </div>
-                            <div className="modal-body">
+                            <div className="modal-body" style={{ overflowWrap: 'break-word' }}>
 
+                                <div className="container mb-6">
 
-                                <div class="row mb-5">
-                                    <div class="col-sm-8">
+                                    <div className="col mb-6">
+                                        <img src={relevantWork1} className="float-right mr-3" alt="..." style={{ maxWidth: '300px' }} />
+
                                         <p><strong>Title: </strong>Learning to see: We are made of star dust</p>
                                         <p><strong>Artist: </strong>Memo Akten</p>
                                         <p><strong>Year: </strong>2017</p>
                                         <p><strong>Technique: </strong>custom software, AI, machine learning, deep learning, generative adversarial networks</p>
-                                        <p><strong>Link: </strong><a href='https://www.memo.tv/works/we-are-made-of-star-dust/' target='_blank' style={{ color: 'black', textDecoration: 'underline' }}>https://www.memo.tv/works/we-are-made-of-star-dust/</a></p>
-                                        <p><strong>Paper: </strong><a href='https://research.gold.ac.uk/id/eprint/30191/1/COM_thesis_AktenM_2021.pdf' target='_blank' style={{ color: 'black', textDecoration: 'underline' }}>https://research.gold.ac.uk/id/eprint/30191/1/COM_thesis_AktenM_2021.pdf</a></p>
+                                        <p><strong>Link: </strong><a href='https://www.memo.tv/works/we-are-made-of-star-dust/' target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>https://www.memo.tv/works/we-are-made-of-star-dust/</a></p>
+                                        <p><strong>Paper: </strong><a href='https://research.gold.ac.uk/id/eprint/30191/1/COM_thesis_AktenM_2021.pdf' target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>https://research.gold.ac.uk/id/eprint/30191/1/COM_thesis_AktenM_2021.pdf</a></p>
 
                                         <p><strong>Takeaways:</strong>
                                             <ul className="list-bullet">
@@ -676,20 +720,15 @@ const GalacticDreamscape = () => {
                                             </ul>
                                         </p>
 
-
                                     </div>
-                                    <div class="col-sm-4">
-                                        <img src={relevantWork1} class="ml-3" alt="..." />
-                                    </div>
-                                </div>
 
-                                <div className="row mb-5">
+                                    <div className="col mb-6">
+                                        <img src={relevantWork2} className="float-right mr-3" alt="..." style={{ maxWidth: '200px' }} />
 
-                                    <div class="col-sm-8">
                                         <p><strong>Title: </strong>Universe of Water Particles under Satellite’s Gravity</p>
                                         <p><strong>Art Collective: </strong>teamLab</p>
                                         <p><strong>Year: </strong>2014</p>
-                                        <p><strong>Link: </strong><a href='https://www.teamlab.art/w/satellites-gravity/space-art/' target='_blank' style={{ color: 'black', textDecoration: 'underline' }}>https://www.teamlab.art/w/satellites-gravity/space-art/</a></p>
+                                        <p><strong>Link: </strong><a href='https://www.teamlab.art/w/satellites-gravity/space-art/' target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>https://www.teamlab.art/w/satellites-gravity/space-art/</a></p>
 
                                         <p><strong>Takeaways:</strong>
                                             <ul className="list-bullet">
@@ -712,18 +751,13 @@ const GalacticDreamscape = () => {
                                         </p>
                                     </div>
 
-                                    <div class="col-sm-3">
-                                        <img src={relevantWork2} class="ml-3" alt="..." />
-                                    </div>
-                                </div>
+                                    <div className="col mb-6">
+                                        <img src={relevantWork3} className="float-right mr-3" alt="..." style={{ maxWidth: '300px' }} />
 
-                                <div className="row mb-5">
-
-                                    <div class="col-sm-8">
                                         <p><strong>Title: </strong>The politics of solar rhythms: Cosmic Levitation</p>
                                         <p><strong>Artist: </strong>Tomas Saraceno</p>
                                         <p><strong>Year: </strong>2018</p>
-                                        <p><strong>Link: </strong><a href='https://studiotomassaraceno.org/the-politics-of-solar-rhythms-cosmic-levitation/' target='_blank' style={{ color: 'black', textDecoration: 'underline' }}>https://studiotomassaraceno.org/the-politics-of-solar-rhythms-cosmic-levitation/</a></p>
+                                        <p><strong>Link: </strong><a href='https://studiotomassaraceno.org/the-politics-of-solar-rhythms-cosmic-levitation/' target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}>https://studiotomassaraceno.org/the-politics-of-solar-rhythms-cosmic-levitation/</a></p>
 
                                         <p><strong>Takeaways:</strong>
                                             <ul className="list-bullet">
@@ -746,23 +780,19 @@ const GalacticDreamscape = () => {
                                         </p>
                                     </div>
 
-                                    <div class="col-sm-4">
-                                        <img src={relevantWork3} class="ml-3" alt="..." />
+                                    <div className="col">
+                                        <h3>Reflection</h3>
+
+                                        <p className='mb-2'>
+                                            &emsp; Memo Akten, teamLab, and Tomas Saraceno inspire me with their innovative use of technology and interactivity in their art. Memo’s work with machine learning and deep learning algorithms to reconstruct images aligns closely with my aesthetic goals, while teamLab’s use of simulated gravity to create waterfalls resonates with my desire to incorporate similar effects in my project proposal. Tomas Saraceno’s work make me consider narrowing down my research question or developing a more specific focus for the art installation. His use of interdisciplinary elements has also encouraged me to think about incorporating sound into my project, if time allows. This could add another layer of depth to the experience, enhancing the overall impact of the installation
+                                        </p>
+
+                                        <p>
+                                            &emsp; I believe my project is feasible because TouchDesigner supports complex visual effects and AI integrations. I also learned a basic understanding of TouchDesigner’s components and operators. However, I need to review some of these elements again to better understanding their connection logic. I discovered these artists through different channels. I follow teamLab’s Instagram account. As for Tomas Saraceno, I learned about his work from VIS 159 class presentation last quarter, which was part of a list curated by Memo Akten. My project will use different visual element to show zero gravity. I have not decided yet. My project also uses images capture from telescope to make more futurism, unlike memo's work using nature to generate space.
+                                        </p>
                                     </div>
+
                                 </div>
-
-                                <h3>Reflection</h3>
-
-                                <p className='mb-2'>
-                                    &emsp; Memo Akten, teamLab, and Tomas Saraceno inspire me with their innovative use of technology and interactivity in their art. Memo’s work with machine learning and deep learning algorithms to reconstruct images aligns closely with my aesthetic goals, while teamLab’s use of simulated gravity to create waterfalls resonates with my desire to incorporate similar effects in my project proposal. Tomas Saraceno’s work make me consider narrowing down my research question or developing a more specific focus for the art installation. His use of interdisciplinary elements has also encouraged me to think about incorporating sound into my project, if time allows. This could add another layer of depth to the experience, enhancing the overall impact of the installation
-                                </p>
-
-                                <p>
-                                    &emsp; I believe my project is feasible because TouchDesigner supports complex visual effects and AI integrations. I also learned a basic understanding of TouchDesigner’s components and operators. However, I need to review some of these elements again to better understanding their connection logic. I discovered these artists through different channels. I follow teamLab’s Instagram account. As for Tomas Saraceno, I learned about his work from VIS 159 class presentation last quarter, which was part of a list curated by Memo Akten. My project will use different visual element to show zero gravity. I have not decided yet. My project also uses images capture from telescope to make more futurism, unlike memo's work using nature to generate space.
-                                </p>
-
-
-
                             </div>
 
                         </div>
@@ -824,6 +854,13 @@ const GalacticDreamscape = () => {
                             </div>
                             <div className="modal-body">
 
+                                <p className='pb-4'>
+                                    Before feeding the NGC 1705 galaxy image into StreamDiffusionTD, the system generated universe-themed images despite being set to img2img mode. 
+                                    After I added the NGC 1705 galaxy image to StreamDiffusionTD, it began generating a kind of dreamscape. 
+                                    I believe StreamDiffusionTD extracts colors and composition from the input image to generate a new, 
+                                    transformed image.
+                                </p>
+
                                 <h4>Before</h4>
                                 <div className='pb-4'>
                                     <img src={task5_3_before} style={{ width: '50%', height: '40%', borderRadius: '15px' }} alt="description" />
@@ -831,10 +868,11 @@ const GalacticDreamscape = () => {
 
 
                                 <h4>After</h4>
-                                <img src={task5_3_add} className='pb-5' style={{ width: '50%', height: '50%' }} alt="description" />
+                                
+                                <img src={task5_3_add} style={{ width: '50%', height: '50%' }} alt="description" />
+                                <a href="https://en.wikipedia.org/wiki/NGC_1705" target='_blank' className='pb-5' style={{ color: '#0000EE', textDecoration: 'underline' }}>Source: NGC 1705</a>
 
                                 <div className="ratio ratio-16x9">
-
                                     <video className="w-100" controls autoplay muted>
                                         <source src={task5_3progress_video} type="video/mp4" />
                                         Your browser does not support the video tag.
@@ -846,42 +884,6 @@ const GalacticDreamscape = () => {
                                 </p>
 
                             </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                {/* Task 5.4 Modal */}
-                <div
-                    className="modal fade"
-                    id="task5.4Modal"
-                    tabIndex="-1"
-                    aria-labelledby="task5.4ModalLabel"
-                    aria-hidden="true"
-                >
-                    <div className="modal-dialog modal-dialog-centered modal-xl">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <h5 className="modal-title" id="task5.4ModalLabel">Task 5.4 Progress: System Design</h5>
-                                <button
-                                    type="button"
-                                    className="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                ></button>
-                            </div>
-                            <div className="modal-body" style={{ height: '80vh' }}>
-                                <iframe
-                                    style={{
-                                        border: '1px solid rgba(0, 0, 0, 0.1)',
-                                        width: '100%',
-                                        height: '100%',
-                                    }}
-                                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FTEW2c0iBpmELL66caGyXdq%2FICAM-Senior-Project-Workflow%3Fnode-id%3D0-1%26t%3D4FaHa90C9GyAb134-1"
-                                    allowFullScreen
-                                ></iframe>
-                            </div>
-
 
                         </div>
                     </div>
@@ -915,7 +917,7 @@ const GalacticDreamscape = () => {
                                         <strong>Format:</strong> Digital media, projection, and interactive technology
                                     </li>
                                     <li>
-                                        <strong>Website:</strong> <a href="https://www.kaleo-cao.com/artworks/GalacticDreamscape" target='_blank' style={{ color: 'black', textDecoration: 'underline' }}> https://www.kaleo-cao.com/artworks/GalacticDreamscape</a>
+                                        <strong>Website:</strong> <a href="https://www.kaleo-cao.com/artworks/GalacticDreamscape" target='_blank' style={{ color: '#0000EE', textDecoration: 'underline' }}> https://www.kaleo-cao.com/artworks/GalacticDreamscape</a>
                                     </li>
                                     <li>
                                         <strong>Equipment Specifications: </strong> Computer installed the TouchDesigner, Kinect, and Projector [Resolution: 1024x768; Throw Distance: 5.3' - 34.3']
@@ -928,9 +930,9 @@ const GalacticDreamscape = () => {
 
                                         <p className='font-weight-bold'>Setup</p>
                                         <ul className="list-bullet">
-                                            <li><strong>Kinect</strong>: Place the Kinect at a height that captures the entire interaction area.</li>
+                                            <li><strong>Leap Motion</strong>: Place the Leap Motionn at a height that captures the entire interaction area.</li>
                                             <li><strong>Projector</strong>: Mount the projector securely and alig it with the projector surface.</li>
-                                            <li><strong>Computer</strong>: Place the computer in flat area near the projector and Kinect.</li>
+                                            <li><strong>Computer</strong>: Place the computer in flat area near the projector and Leap Motion.</li>
                                         </ul>
 
                                     </li>
@@ -944,9 +946,6 @@ const GalacticDreamscape = () => {
                         </div>
                     </div>
                 </div>
-
-
-
             </main >
         </div >
     )
