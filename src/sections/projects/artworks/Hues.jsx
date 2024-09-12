@@ -24,17 +24,23 @@ const Hues= () => {
                         Technique: Python, Message Passing Interface (MPI), OpenCV<br />    
                     </div>
 
+                    <div style={{ position: 'relative', width: '100%', height: 0, paddingBottom: '45%' }}>
+                        <iframe
+                            src="https://player.vimeo.com/video/1007863999?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameBorder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                            title="HUES: Partial Works Demo"
+                        ></iframe>
+                    </div>
+
                 </div>
 
       
 
 
 
-                {/* <section>
-                    <div className="container py-4">
-                        <h5 className="text-capitalize">Random Recommended works</h5>
-                    </div>
-                </section> */}
+          
 
             </main >
 
