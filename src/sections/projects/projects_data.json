@@ -54,7 +54,7 @@
     "transferable_skills": [
       ""
     ],
-    "description": "",
+    "description": "An educational robot that makes use of the Mini Pupper 2 quadruped robot. It aims to improve students’ learning experience through the use of personalized question decks and enforce retrieval practice when reviewing each question.",
     "image": "/assets/img/tutorPup.png",
     "badges": [
       {
@@ -95,7 +95,7 @@
     "badges": [
       {
         "type": "artist-statement",
-        "link": ""
+        "link": "./artworks/MagneticAlchemy"
       }
     ]
   },
@@ -224,7 +224,7 @@
     "description": "An interactive film blending visuals and sounds, exploring climate change impacts and AI, urging reflection and environmental action.",
     "image": "/assets/img/interactive-film.gif",
     "badges": [
-      {"type": "artist-statement", "link": ""}
+      {"type": "artist-statement", "link": "./artworks/ChromaticCataclysm"}
     ]
   },
   {

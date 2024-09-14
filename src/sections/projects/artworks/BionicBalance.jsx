@@ -6,7 +6,8 @@ import Navbar from '../../navBar/Navbar';
 const BionicBalance = () => {
     const [selectedImage, setSelectedImage] = useState(null);
     const [showModal, setShowModal] = useState(false);
-    const scrollRef = useRef(null);
+    const finalscrollRef = useRef(null);
+    const processscrollRef = useRef(null);
 
     useEffect(() => {
         document.title = "Bionic Balance [2024] - Kaleo Cao";
@@ -30,15 +31,29 @@ const BionicBalance = () => {
         { url: 'https://personal-website-data.s3.us-east-2.amazonaws.com/bionic_balance/WIP-3.png', caption: 'Render of the second structure, featuring rotated floors with a rectangular shape.', detailed_caption: "Render of the second structure, featuring rotated floors with a rectangular shape." },
     ]);
 
+    // Scrolling effect
+    // Use useEffect to scroll both containers at different intervals or the same
     useEffect(() => {
-        const scrollInterval = setInterval(() => {
-            if (scrollRef.current) {
-                scrollRef.current.scrollBy({ left: 150, behavior: 'smooth' });
+        const scrollFinal = setInterval(() => {
+            if (finalscrollRef.current) {
+                finalscrollRef.current.scrollBy({ left: 150, behavior: 'smooth' });
             }
         }, 3000);
 
-        return () => clearInterval(scrollInterval);
+        const scrollImages = setInterval(() => {
+            if (processscrollRef.current) {
+                processscrollRef.current.scrollBy({ left: 150, behavior: 'smooth' });
+            }
+        }, 3000);
+
+        // Cleanup intervals when component is unmounted
+        return () => {
+            clearInterval(scrollFinal);
+            clearInterval(scrollImages);
+        };
     }, []);
+
+
 
     const openModal = (image) => {
         setSelectedImage(image);
@@ -48,7 +63,6 @@ const BionicBalance = () => {
     const closeModal = () => {
         setShowModal(false);
     };
-
 
 
     return (
@@ -67,21 +81,29 @@ const BionicBalance = () => {
                     </div>
 
                     <div
-                        ref={scrollRef}
+                        ref={finalscrollRef}
                         className="d-flex overflow-auto"
                         style={{ whiteSpace: "nowrap" }}
                     >
-                        {images.map((image, index) => (
-                            <div key={index} style={{ flex: "0 0 33.33%", padding: "0 15px" }}>
-                                <img
-                                    src={image}
-                                    className="img-fluid"
-                                    alt={`Slide ${index}`}
-                                    style={{ width: "100%" }}
-                                />
-                            </div>
-                        ))}
+                        <div className="row flex-nowrap">
+                            {images.map((image, index) => (
+                                <div
+                                    key={index}
+                                    className="col-6 col-md-4 col-lg-4"
+                                    style={{ flex: "0 0 auto", padding: "0 15px" }}
+                                >
+                                    <img
+                                        src={image}
+                                        className="img-fluid"
+                                        alt={`Slide ${index}`}
+                                        style={{ width: "100%" }}
+                                    />
+                                </div>
+                            ))}
+                        </div>
                     </div>
+
+
 
                     <p className="pt-6 pb-4">
                         Inspiration for this art instllation comes from the ever-changing Earth. Over millions of
@@ -156,12 +178,12 @@ const BionicBalance = () => {
 
                     <div>
                         <div
-                            ref={scrollRef}
+                            ref={processscrollRef}
                             className="d-flex overflow-auto"
                             style={{ whiteSpace: "nowrap" }}
                         >
                             {WIPimages.map((image, index) => (
-                                <div key={index} style={{ flex: "0 0 33.33%", padding: "0 15px" }}>
+                                <div key={index} className="col-6 col-md-4 col-lg-4" style={{ flex: "0 0 auto", padding: "0 15px" }}>
                                     <figure>
                                         <img
                                             src={image.url}
@@ -215,7 +237,7 @@ const BionicBalance = () => {
                         </p>
                     </div>
 
-                    <div className="row pb-4">
+                    <div className="row pb-6">
                         <div className="col-12 col-md-4">
                             <img
                                 src="https://personal-website-data.s3.us-east-2.amazonaws.com/bionic_balance/3d-printing.gif"
@@ -229,6 +251,13 @@ const BionicBalance = () => {
                             <p>
                                 Before the model was 3D printed, the model was inspected for exposed edges and fixed if there were any, and the pillars were thickened to ensure structural stability. To increase the realistic quality of the installation, small 3D printed animals and characters were added to create a more immersive experience. The art installation’s tech stack also utilized Arduino, LED strips, and touch sensors. Two touch sensors were set up, each controlling a set of LED lights. This allows participants to interact with the installation, change the color of the lights and turn them on or off. The other three touch sensors were added for storytelling purposes. When activated, it triggers audio playback, adding another layer of engagement to the piece. This audio element may share stories or information related to the theme of environmental change and adaptation of the installation.
                             </p>
+
+                            <img
+                                src="https://personal-website-data.s3.us-east-2.amazonaws.com/bionic_balance/models.png"
+                                alt="Descriptive text"
+                                className="img-fluid"
+                                style={{ objectFit: 'cover', maxHeight: '100%', maxWidth: '300px', display: 'block', margin: '0 auto'  }}
+                            />
                         </div>
                     </div>
 
@@ -243,7 +272,7 @@ const BionicBalance = () => {
                         ></iframe>
                     </div>
 
-                    <p className="pt-3 pb-6">
+                    <p className="pt-4 pb-6">
                         The video above demonstrates three stories. In the year 2100, Mary and Sarah think about how humans have adapted to desert life, with
                         bionic buildings that mimic cacti to store water and solar panels that move like sunflower heads to capture the sunlight.
                         Meanwhile, an eagle rests on the roof, observing the collaboration between man and nature. The buildings are designed to fit seamlessly

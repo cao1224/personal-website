@@ -9,7 +9,9 @@ import Projects from '../src/sections/projects/Projects';
 import GalacticDreamscape from '../src/sections/projects/artworks/GalacticDreamscape.jsx';
 import BionicBalance from '../src/sections/projects/artworks/BionicBalance.jsx';
 import Hues from '../src/sections/projects/artworks/Hues.jsx';
+import MagneticAlchemy from "../src/sections/projects/artworks/MagneticAlchemy.jsx";
 import LivingOnEdge from '../src/sections/projects/artworks/LivingOnEdge.jsx';
+import ChromaticCataclysm from '../src/sections/projects/artworks/ChromaticCataclysm.jsx';
 
 import Gallery from '../src/sections/gallery/Gallery';
 import GallerySinglePage from '../src/components/GallerySinglePage.jsx';
@@ -58,7 +60,10 @@ function App() {
             <Route path='/artworks/GalacticDreamscape' element={<GalacticDreamscape/>}/>
             <Route path='/artworks/BionicBalance' element={<BionicBalance/>}/>
             <Route path='/artworks/Hues' element={<Hues />}/>
+            <Route path="/artworks/MagneticAlchemy" element={<MagneticAlchemy />}/>
             <Route path='/artworks/LivingOnEdge' element={<LivingOnEdge />}/>
+            <Route path='/artworks/ChromaticCataclysm' element={<ChromaticCataclysm />}/>
+
 
             <Route path="/gallery/:title" element={<GallerySinglePage />} />
           </Routes>

@@ -20530,23 +20530,31 @@ ol.list-decimal li {
       height: 240px;
     }
   }
+
+/* Base styles for the grid */
+.image-grid {
+    display: grid;
+    grid-gap: 15px;
+    width: max-content; /* Allows the grid to be only as wide as its content */
+  }
   
-
-  .responsive-image {
-    float: left; /* Image floats to the left, text wraps around it */
-    margin-right: 15px;
-    max-width: auto; /* Ensures the image doesn't overflow the container */
-    height: 20%; /* Keeps the image aspect ratio */
-}
-
-.responsive-text {
-    font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-    .responsive-image {
-        float: none; /* Removes the float for smaller screens */
-        display: block;
-        margin: 0 auto 15px; /* Centers the image with some bottom margin */
+  /* Small and medium screens (md and below): 2 columns */
+  @media (max-width: 991.98px) {
+    .image-grid {
+      grid-template-columns: repeat(4, calc(50% - 15px)); /* 2 images per row, 2 rows */
     }
-}
+  }
+  
+  /* Large screens (lg and above): 3 columns */
+  @media (min-width: 992px) {
+    .image-grid {
+      grid-template-columns: repeat(6, calc(33.33% - 10px)); /* 3 images per row */
+    }
+  }
+  
+  /* Styles for grid items */
+  .grid-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  

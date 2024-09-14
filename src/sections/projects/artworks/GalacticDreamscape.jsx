@@ -21,7 +21,6 @@ import relevantWork1 from '/assets/img/galactic_dreamscape_data/relevant_work_1.
 import relevantWork2 from '/assets/img/galactic_dreamscape_data/relevant_work_2.png';
 import relevantWork3 from '/assets/img/galactic_dreamscape_data/relevant_work_3.jpg';
 
-import finalImg1 from '/assets/img/galactic_dreamscape_data/final_img1.png';
 
 const GalacticDreamscape = () => {
 
@@ -80,16 +79,22 @@ const GalacticDreamscape = () => {
                         className="d-flex overflow-auto"
                         style={{ whiteSpace: "nowrap" }}
                     >
-                        {images.map((image, index) => (
-                            <div key={index} style={{ flex: "0 0 33.33%", padding: "0 15px" }}>
-                                <img
-                                    src={image}
-                                    className="img-fluid"
-                                    alt={`Slide ${index}`}
-                                    style={{ width: "100%" }}
-                                />
-                            </div>
-                        ))}
+                        <div className="row flex-nowrap">
+                            {images.map((image, index) => (
+                                <div
+                                    key={index}
+                                    className="col-6 col-md-4 col-lg-4"
+                                    style={{ flex: "0 0 auto", padding: "0 15px" }}
+                                >
+                                    <img
+                                        src={image}
+                                        className="img-fluid"
+                                        alt={`Slide ${index}`}
+                                        style={{ width: "100%" }}
+                                    />
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     <p className="pt-6">Space has always captured our imagination and inspired us to dream beyond Earth.
@@ -855,9 +860,9 @@ const GalacticDreamscape = () => {
                             <div className="modal-body">
 
                                 <p className='pb-4'>
-                                    Before feeding the NGC 1705 galaxy image into StreamDiffusionTD, the system generated universe-themed images despite being set to img2img mode. 
-                                    After I added the NGC 1705 galaxy image to StreamDiffusionTD, it began generating a kind of dreamscape. 
-                                    I believe StreamDiffusionTD extracts colors and composition from the input image to generate a new, 
+                                    Before feeding the NGC 1705 galaxy image into StreamDiffusionTD, the system generated universe-themed images despite being set to img2img mode.
+                                    After I added the NGC 1705 galaxy image to StreamDiffusionTD, it began generating a kind of dreamscape.
+                                    I believe StreamDiffusionTD extracts colors and composition from the input image to generate a new,
                                     transformed image.
                                 </p>
 
@@ -868,7 +873,7 @@ const GalacticDreamscape = () => {
 
 
                                 <h4>After</h4>
-                                
+
                                 <img src={task5_3_add} style={{ width: '50%', height: '50%' }} alt="description" />
                                 <a href="https://en.wikipedia.org/wiki/NGC_1705" target='_blank' className='pb-5' style={{ color: '#0000EE', textDecoration: 'underline' }}>Source: NGC 1705</a>
 
