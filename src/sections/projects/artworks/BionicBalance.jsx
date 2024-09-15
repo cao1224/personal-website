@@ -14,6 +14,7 @@ const BionicBalance = () => {
     }, [])
 
     const images = [
+        "https://personal-website-data.s3.us-east-2.amazonaws.com/bionic_balance/img0.jpg",
         "https://personal-website-data.s3.us-east-2.amazonaws.com/bionic_balance/img1.JPG",
         "https://personal-website-data.s3.us-east-2.amazonaws.com/bionic_balance/img2.JPG",
         "https://personal-website-data.s3.us-east-2.amazonaws.com/bionic_balance/img3.png",
