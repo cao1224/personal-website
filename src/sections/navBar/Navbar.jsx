@@ -95,7 +95,7 @@ const Navbar = () => {
             <a href="/#skillset" className={`nav-link w-nav-link ${activeLink === '/#skillset' ? 'active-link' : ''}`} style={{ maxWidth: '100%' }}>Skillset</a>
             <a href="/#experiences" className={`nav-link w-nav-link ${activeLink === '/#experiences' ? 'active-link' : ''}`} style={{ maxWidth: '100%' }}>Experiences</a>
             <Link to="/projects" className={`nav-link w-nav-link ${activeLink === '/projects' ? 'active-link' : ''}`} style={{ maxWidth: '100%' }}>Projects</Link>
-            <Link to="/gallery" className={`nav-link w-nav-link ${activeLink === '/gallery' ? 'active-link' : ''}`} style={{ maxWidth: '100%' }}>Photography</Link>
+            {/* <Link to="/gallery" className={`nav-link w-nav-link ${activeLink === '/gallery' ? 'active-link' : ''}`} style={{ maxWidth: '100%' }}>Photography</Link> */}
           </nav>
         </div>
       </div>
@@ -118,9 +118,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/projects" className={`nav-link ${activeLink === '/projects' ? 'active-link' : ''}`}><FaLightbulb /></Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link to="/gallery" className={`nav-link ${activeLink === '/gallery' ? 'active-link' : ''}`}><FaCamera /></Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
 
