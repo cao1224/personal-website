@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import Navbar from '../navBar/Navbar';
 import PdfModal from '../../components/PdfModal';
 
-import Resume from "/assets/files/Yuancheng_Cao_Resume.pdf";
+import Resume from "/assets/files/Yuancheng-Cao-Arch-Resume.pdf";
 
 import headerCover from "/assets/img/cover_image.png";
 import heade_Cover_Layer1 from "/assets/img/heade_Cover_Layer1.png";
