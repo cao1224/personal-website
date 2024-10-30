@@ -132,12 +132,12 @@ const About = () => {
             className="responsive-img img-left"
           />
           {/* Image 2 - Bottom Right */}
-          <img
+          {/* <img
             src={heade_Cover_Layer2}
             alt="Image 2"
             className="responsive-img img-right"
           />
-   
+    */}
 
       </div>
 
