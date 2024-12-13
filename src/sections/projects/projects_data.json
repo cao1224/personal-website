@@ -4,21 +4,24 @@
     "year": 2024,
     "field_of_study": "data-science",
     "transferable_skills": [],
-    "description": "This project is in progress and will be updated at the end of March 2025.",
+    "description": "This project addresses bias in pretrial release algorithms by using the AIF360 library to assess and mitigate inequities in training data, ensuring fairer outcomes in judicial system.",
     "image": "/assets/img/coming_soon.jpg",
     "badges": [
       
     ]
   },
   {
-    "title": "Protecting the Socially Vulnerable in Coastal Communities with Data Recommendations",
+    "title": "Building Resilience in Coastal Communities During Hurricanes",
     "year": 2024,
     "field_of_study": "data-science",
     "transferable_skills": [],
-    "description": "This project is in progress and will be updated at the end of December 2024.",
-    "image": "/assets/img/coming_soon.jpg",
+    "description": "This project addresses the challenges hurricanes pose to coastal communities by developing a risk assessment model and an interactive tool. It empowers health groups to allocate resources effectively and helps individuals make informed decisions.",
+    "image": "/assets/img/BTTAI_Pro.png",
     "badges": [
-      
+      {
+        "type": "code",
+        "link": "https://github.com/cao1224/BTTAIStudio_Snowlfake1B_FA24"
+      }
     ]
   },
   {
