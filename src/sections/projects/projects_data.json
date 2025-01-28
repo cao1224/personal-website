@@ -1,12 +1,46 @@
 [
   {
-    "title": "Ethical Considerations in Using Artificial Intelligence",
-    "year": 2024,
+    "title": "NLP Project",
+    "year": 2025,
+    "field_of_study": "data-science",
+    "transferable_skills": [],
+    "description": "Will update in late March 2025.",
+    "image": "/assets/img/coming_soon.jpg",
+    "badges": [
+    ]
+  },
+  {
+    "title": "Deep Learning Project",
+    "year": 2025,
+    "field_of_study": "data-science",
+    "transferable_skills": [],
+    "description": "Will update in late March 2025.",
+    "image": "/assets/img/coming_soon.jpg",
+    "badges": [
+    ]
+  },
+  {
+    "title": "Digital Design and Fabrication Collection",
+    "year": 2025,
+    "field_of_study": "art",
+    "transferable_skills": [],
+    "description": "Will update in late March 2025.",
+    "image": "/assets/img/coming_soon.jpg",
+    "badges": [
+    ]
+  },
+  {
+    "title": "Ethics of Artificial Intelligence in Crime",
+    "year": 2025,
     "field_of_study": "data-science",
     "transferable_skills": [],
     "description": "This project addresses bias in pretrial release algorithms by using the AIF360 library to assess and mitigate inequities in training data, ensuring fairer outcomes in judicial system.",
     "image": "/assets/img/coming_soon.jpg",
     "badges": [
+      {
+        "type": "code",
+        "link": "https://github.com/cao1224/ucsd_capstone_project"
+      }
       
     ]
   },
@@ -21,6 +55,10 @@
       {
         "type": "code",
         "link": "https://github.com/cao1224/BTTAIStudio_Snowlfake1B_FA24"
+      },
+      {
+        "type": "report",
+        "link": ""
       }
     ]
   },

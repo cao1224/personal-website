@@ -106,7 +106,7 @@ const Projects = () => {
                         >
                             All
                         </button>
-                        {[2024, 2023, 2022, 2021].map(year => (
+                        {[2025, 2024, 2023, 2022, 2021].map(year => (
                             <button
                                 key={year}
                                 className="btn btn-sm btn-white font-weight-normal fs-6 mr-2 mb-2"
